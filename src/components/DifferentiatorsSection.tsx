@@ -2,30 +2,35 @@ import { motion } from "framer-motion";
 import { Brain, Scale, Lightbulb, Users, MapPin, Award } from "lucide-react";
 
 const items = [
-  { icon: Brain, title: "Expertise", desc: "Pentests, reverse engineering, forensique, conseil ISO 27001" },
-  { icon: Scale, title: "Indépendance", desc: "Aucun partenariat éditeur ou constructeur" },
-  { icon: Lightbulb, title: "Innovation", desc: "Recherche sur la sécurité IoT via une thèse Cifre" },
-  { icon: Users, title: "À taille humaine", desc: "Offre personnalisée et qualité de service optimale" },
-  { icon: MapPin, title: "En expansion", desc: "Lyon, Paris, Saint-Étienne, Grenoble, Annecy" },
-  { icon: Award, title: "Certifiés", desc: "PASSI, ISO 27001 pour des audits qualitatifs" },
+  { icon: Brain, title: "Expertise pointue", desc: "Pentests, reverse engineering, analyse forensique, conseil ISO 27001. Une équipe de passionnés certifiés." },
+  { icon: Scale, title: "Indépendance totale", desc: "Aucun partenariat éditeur ou constructeur. Nos recommandations sont guidées uniquement par votre sécurité." },
+  { icon: Lightbulb, title: "Innovation continue", desc: "Partenariat avec un centre de recherche lyonnais. Thèse Cifre sur la sécurité des systèmes IoT." },
+  { icon: Users, title: "À taille humaine", desc: "Notre taille garantit une offre personnalisée, un interlocuteur dédié et une qualité de service optimale." },
+  { icon: MapPin, title: "Couverture nationale", desc: "Siège à Lyon. Présents à Paris, Saint-Étienne, Grenoble, Annecy et sur tout le territoire." },
+  { icon: Award, title: "Doublement certifiés", desc: "PASSI et ISO 27001 : nous appliquons les standards de sécurité les plus exigeants." },
 ];
 
 const DifferentiatorsSection = () => {
   return (
-    <section id="about" className="py-24">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-28 relative">
+      <div className="absolute inset-0">
+        <div className="absolute bottom-0 left-1/3 w-96 h-96 bg-primary/3 rounded-full blur-[120px]" />
+      </div>
+
+      <div className="container relative z-10 mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="max-w-3xl mb-20"
         >
-          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
+          <span className="text-xs font-semibold tracking-widest uppercase text-primary mb-4 block">Pourquoi nous choisir</span>
+          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6">
             Ce qui nous <span className="text-gradient">différencie</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            AlgoSecure est un cabinet de conseil indépendant spécialisé en sécurité des systèmes d'information, 
-            une équipe lyonnaise de passionnés au plus proche de vos besoins.
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            AlgoSecure est un cabinet de conseil indépendant spécialisé en SSI.
+            Une équipe lyonnaise de passionnés au plus proche de vos besoins en cybersécurité.
           </p>
         </motion.div>
 
@@ -36,16 +41,15 @@ const DifferentiatorsSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="flex gap-4 p-6 rounded-xl hover:bg-card/50 transition-colors group"
+              transition={{ delay: i * 0.08 }}
+              whileHover={{ y: -4 }}
+              className="p-7 rounded-2xl border border-border/30 hover:border-primary/20 bg-card/20 hover:bg-card/40 transition-all duration-300 group"
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/15 group-hover:shadow-glow-sm transition-all duration-300">
                 <item.icon className="h-6 w-6 text-primary" />
               </div>
-              <div>
-                <h3 className="font-heading font-semibold text-foreground mb-1">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.desc}</p>
-              </div>
+              <h3 className="font-heading text-lg font-bold text-foreground mb-3">{item.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
             </motion.div>
           ))}
         </div>
