@@ -27,7 +27,7 @@ const AlgoLightHouseSection = () => {
                 Surveillance continue
               </span>
               <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                algo<span className="text-gradient">LightHouse</span>
+                cloud<span className="text-gradient">LightHouse</span>
               </h2>
               <p className="text-lg text-secondary-foreground leading-relaxed mb-8">
                 Pilotez et maîtrisez votre surface d'attaque externe. Un service managé combinant

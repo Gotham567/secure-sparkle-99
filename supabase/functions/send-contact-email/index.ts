@@ -34,7 +34,7 @@ serve(async (req) => {
     let htmlContent: string;
 
     if (type === "contact") {
-      subject = `[AlgoSecure] Nouveau message de ${name}`;
+      subject = `[CloudSecure] Nouveau message de ${name}`;
       htmlContent = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
           <h2 style="color: #22c55e; border-bottom: 2px solid #22c55e; padding-bottom: 10px;">Nouveau message de contact</h2>
@@ -44,16 +44,16 @@ serve(async (req) => {
           <div style="background: #f4f4f5; padding: 15px; border-radius: 8px; margin-top: 8px;">
             ${message}
           </div>
-          <p style="color: #888; font-size: 12px; margin-top: 20px;">Envoyé depuis le site AlgoSecure</p>
+          <p style="color: #888; font-size: 12px; margin-top: 20px;">Envoyé depuis le site CloudSecure</p>
         </div>
       `;
     } else {
-      subject = `[AlgoSecure] Nouvel abonné newsletter`;
+      subject = `[CloudSecure] Nouvel abonné newsletter`;
       htmlContent = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
           <h2 style="color: #22c55e; border-bottom: 2px solid #22c55e; padding-bottom: 10px;">Nouvel abonné à la newsletter</h2>
           <p><strong>Email :</strong> ${email}</p>
-          <p style="color: #888; font-size: 12px; margin-top: 20px;">Envoyé depuis le site AlgoSecure</p>
+          <p style="color: #888; font-size: 12px; margin-top: 20px;">Envoyé depuis le site CloudSecure</p>
         </div>
       `;
     }
@@ -65,7 +65,7 @@ serve(async (req) => {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "AlgoSecure <onboarding@resend.dev>",
+        from: "CloudSecure <onboarding@resend.dev>",
         to: [CONTACT_EMAIL],
         subject,
         html: htmlContent,
