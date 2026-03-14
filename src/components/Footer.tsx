@@ -16,7 +16,7 @@ const Footer = () => {
               </span>
             </a>
             <p className="text-sm text-muted-foreground leading-relaxed mb-5">
-              Cabinet de conseil indépendant en cybersécurité. Qualifié PASSI & certifié ISO 27001.
+              Cabinet expert en sécurité cloud, audit AWS & Azure. Qualifié PASSI & certifié ISO 27001.
             </p>
             <div className="flex gap-3">
               <a href="https://www.linkedin.com/company/algosecure/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-muted/30 border border-border/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/30 transition-all">
