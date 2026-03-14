@@ -24,7 +24,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    quote: "Nous avons collaboré avec AlgoSecure plusieurs fois et sommes toujours satisfaits. Rapports clairs et précis, conseils judicieux et adaptés à nos contraintes.",
+    quote: "Nous avons collaboré avec CloudSecure plusieurs fois et sommes toujours satisfaits. Rapports clairs et précis, conseils judicieux et adaptés à nos contraintes.",
     author: "Didier L.",
     role: "CEO",
     company: "e2Time",
