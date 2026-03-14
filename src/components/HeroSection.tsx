@@ -56,14 +56,14 @@ const HeroSection = () => {
               </div>
 
               <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-8">
-                Experts en
+                Sécurité Cloud
                 <br />
-                <span className="text-gradient">cybersécurité</span>
+                <span className="text-gradient">& IA</span>
               </h1>
 
               <p className="text-lg md:text-xl text-secondary-foreground max-w-lg mb-10 leading-relaxed">
-                Cabinet de conseil indépendant spécialisé en sécurité des systèmes d'information.
-                Nous protégeons vos actifs numériques avec rigueur et passion.
+                Cabinet expert en audit AWS, Azure et sécurité cloud pour startups et entreprises tech.
+                Tests d'intrusion, conformité NIS2 et cybersécurité pilotée par l'IA.
               </p>
 
               <div className="flex flex-wrap gap-4">
