@@ -44,7 +44,7 @@ serve(async (req) => {
           <div style="background: #f4f4f5; padding: 15px; border-radius: 8px; margin-top: 8px;">
             ${message}
           </div>
-          <p style="color: #888; font-size: 12px; margin-top: 20px;">Envoyé depuis le site AlgoSecure</p>
+          <p style="color: #888; font-size: 12px; margin-top: 20px;">Envoyé depuis le site CloudSecure</p>
         </div>
       `;
     } else {
