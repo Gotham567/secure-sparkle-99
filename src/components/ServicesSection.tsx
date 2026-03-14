@@ -4,27 +4,27 @@ import { Search, ShieldCheck, Phone, Award, ArrowUpRight } from "lucide-react";
 const services = [
   {
     icon: Search,
-    title: "Audit",
-    desc: "Tests d'intrusion, audits de configuration et d'architecture. Nous identifions les vulnérabilités de vos systèmes avant les attaquants.",
-    features: ["Pentest Web & Mobile", "Audit d'infrastructure", "Red Team", "Audit de code source"],
+    title: "Audit Cloud & IA",
+    desc: "Audit de sécurité AWS, Azure et GCP. Tests d'intrusion cloud, revue d'architecture et analyse des configurations pour sécuriser vos environnements cloud.",
+    features: ["Audit AWS & Azure", "Pentest Cloud", "Revue IAM & accès", "Sécurité Kubernetes"],
   },
   {
     icon: ShieldCheck,
-    title: "Conseil",
-    desc: "Accompagnement stratégique et opérationnel pour renforcer la maturité de votre cybersécurité.",
-    features: ["Accompagnement RSSI", "Mise en conformité", "Formation & sensibilisation", "Politique de sécurité"],
+    title: "Conseil & Conformité",
+    desc: "Accompagnement stratégique en sécurité cloud, conformité NIS2, RGPD et ISO 27001 pour startups et entreprises tech.",
+    features: ["Conformité NIS2", "RSSI externalisé", "ISO 27001 Cloud", "Formation DevSecOps"],
   },
   {
     icon: Phone,
-    title: "CERT",
-    desc: "Notre équipe de réponse à incident intervient rapidement pour contenir, analyser et remédier aux cyberattaques.",
-    features: ["Réponse à incident 24/7", "Analyse forensique", "Gestion de crise", "Plan de reprise"],
+    title: "CERT & Incident Cloud",
+    desc: "Réponse à incident sur environnements cloud. Analyse forensique AWS/Azure, gestion de crise et plan de reprise cloud.",
+    features: ["Réponse incident cloud", "Forensique AWS/Azure", "Gestion de crise", "Plan de reprise"],
   },
   {
     icon: Award,
     title: "Certifications",
-    desc: "Nos qualifications et certifications témoignent de notre engagement envers l'excellence et la rigueur.",
-    features: ["PASSI (ANSSI)", "ISO 27001:2022", "OSCP / OSEP", "Cyber Expert"],
+    desc: "Nos certifications cloud et cybersécurité garantissent un haut niveau d'expertise sur AWS, Azure et les standards internationaux.",
+    features: ["PASSI (ANSSI)", "ISO 27001:2022", "AWS Security", "Azure Expert"],
   },
 ];
 
