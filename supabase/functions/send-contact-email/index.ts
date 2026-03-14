@@ -34,7 +34,7 @@ serve(async (req) => {
     let htmlContent: string;
 
     if (type === "contact") {
-      subject = `[AlgoSecure] Nouveau message de ${name}`;
+      subject = `[CloudSecure] Nouveau message de ${name}`;
       htmlContent = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
           <h2 style="color: #22c55e; border-bottom: 2px solid #22c55e; padding-bottom: 10px;">Nouveau message de contact</h2>
