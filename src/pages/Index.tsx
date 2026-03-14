@@ -9,10 +9,12 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
 import NewsletterSection from "@/components/NewsletterSection";
 import Footer from "@/components/Footer";
+import TawkTo from "@/components/TawkTo";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
+      <TawkTo />
       <Navbar />
       <HeroSection />
       <ServicesSection />
