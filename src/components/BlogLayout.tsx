@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { ArrowLeft, Calendar, Clock, Tag } from "lucide-react";
 
 interface BlogLayoutProps {
@@ -15,12 +16,20 @@ interface BlogLayoutProps {
 const BlogLayout = ({ title, description, date, readTime, category, children }: BlogLayoutProps) => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title={title}
+        description={description}
+        type="article"
+        articleDate={date}
+        articleCategory={category}
+      />
       <Navbar />
       <article className="pt-32 pb-20">
         <div className="container mx-auto px-6">
           <Link
             to="/actualites"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-8"
+            aria-label="Retour à la page actualités"
           >
             <ArrowLeft className="h-4 w-4" />
             Retour aux actualités
@@ -29,16 +38,16 @@ const BlogLayout = ({ title, description, date, readTime, category, children }: 
           <header className="max-w-4xl mb-12">
             <div className="flex flex-wrap items-center gap-4 mb-6 text-sm text-muted-foreground">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-xs font-medium">
-                <Tag className="h-3 w-3" />
+                <Tag className="h-3 w-3" aria-hidden="true" />
                 {category}
               </span>
               <span className="inline-flex items-center gap-1.5">
-                <Calendar className="h-3.5 w-3.5" />
-                {date}
+                <Calendar className="h-3.5 w-3.5" aria-hidden="true" />
+                <time>{date}</time>
               </span>
               <span className="inline-flex items-center gap-1.5">
-                <Clock className="h-3.5 w-3.5" />
-                {readTime}
+                <Clock className="h-3.5 w-3.5" aria-hidden="true" />
+                {readTime} de lecture
               </span>
             </div>
             <h1 className="font-heading text-3xl md:text-5xl font-bold text-foreground leading-tight mb-4">
@@ -63,7 +72,7 @@ const BlogLayout = ({ title, description, date, readTime, category, children }: 
               </p>
               <Link
                 to="/#contact"
-                className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:shadow-glow-sm transition-all"
+                className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:shadow-glow-sm transition-all min-h-[44px]"
               >
                 Contactez-nous
               </Link>

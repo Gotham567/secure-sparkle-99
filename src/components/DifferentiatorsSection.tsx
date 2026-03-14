@@ -29,7 +29,7 @@ const DifferentiatorsSection = () => {
             Ce qui nous <span className="text-gradient">différencie</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            AlgoSecure est un cabinet indépendant spécialisé en sécurité cloud et cybersécurité IA.
+            CloudSecure est un cabinet indépendant spécialisé en sécurité cloud et cybersécurité IA.
             Le partenaire de confiance des startups et entreprises tech pour sécuriser AWS, Azure et vos infrastructures cloud.
           </p>
         </motion.div>
