@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Shield, ExternalLink } from "lucide-react";
 
@@ -14,12 +14,39 @@ const navLinks = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHome = location.pathname === "/";
+
+  const handleAnchorClick = (e: React.MouseEvent, href: string) => {
+    if (!isHome) {
+      e.preventDefault();
+      navigate("/" + href);
+    }
+  };
+
+  const handleContactClick = (e: React.MouseEvent) => {
+    if (!isHome) {
+      e.preventDefault();
+      navigate("/#contact");
+    }
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Scroll to hash after navigation to home
+  useEffect(() => {
+    if (isHome && location.hash) {
+      setTimeout(() => {
+        const el = document.querySelector(location.hash);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, [location, isHome]);
 
   return (
     <motion.nav
@@ -55,7 +82,8 @@ const Navbar = () => {
             ) : (
               <a
                 key={link.label}
-                href={link.href}
+                href={isHome ? link.href : `/${link.href}`}
+                onClick={(e) => handleAnchorClick(e, link.href)}
                 className="relative text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200 px-4 py-2 rounded-lg hover:bg-muted/30"
               >
                 {link.label}
@@ -64,7 +92,8 @@ const Navbar = () => {
           )}
           <div className="w-px h-6 bg-border mx-3" />
           <a
-            href="#contact"
+            href={isHome ? "#contact" : "/#contact"}
+            onClick={handleContactClick}
             className="bg-gradient-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:shadow-glow-sm transition-all duration-300 flex items-center gap-2"
           >
             Contactez-nous
@@ -104,8 +133,8 @@ const Navbar = () => {
                 ) : (
                   <a
                     key={link.label}
-                    href={link.href}
-                    onClick={() => setOpen(false)}
+                    href={isHome ? link.href : `/${link.href}`}
+                    onClick={(e) => { handleAnchorClick(e, link.href); setOpen(false); }}
                     className="text-sm font-medium text-muted-foreground hover:text-foreground px-4 py-3 rounded-lg hover:bg-muted/30 transition-colors"
                   >
                     {link.label}
@@ -113,8 +142,8 @@ const Navbar = () => {
                 )
               )}
               <a
-                href="#contact"
-                onClick={() => setOpen(false)}
+                href={isHome ? "#contact" : "/#contact"}
+                onClick={(e) => { handleContactClick(e); setOpen(false); }}
                 className="bg-gradient-primary text-primary-foreground px-5 py-3 rounded-lg text-sm font-semibold text-center mt-2"
               >
                 Contactez-nous
