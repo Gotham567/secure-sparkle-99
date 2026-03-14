@@ -114,14 +114,17 @@ const ContactSection = () => {
                 />
               </div>
               <div className="relative">
-                <MessageSquare className="absolute left-4 top-4 h-4 w-4 text-muted-foreground" />
+                <label htmlFor="contact-message" className="sr-only">Votre message</label>
+                <MessageSquare className="absolute left-4 top-4 h-4 w-4 text-muted-foreground" aria-hidden="true" />
                 <textarea
+                  id="contact-message"
                   value={form.message}
                   onChange={(e) => setForm(prev => ({ ...prev, message: e.target.value }))}
                   placeholder="Décrivez votre besoin..."
                   maxLength={1000}
                   rows={5}
-                  className="w-full bg-card border border-border/80 rounded-xl pl-11 pr-5 py-4 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all resize-none"
+                  required
+                  className="w-full bg-card border border-border/80 rounded-xl pl-11 pr-5 py-4 text-base text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all resize-none"
                 />
               </div>
               <button
