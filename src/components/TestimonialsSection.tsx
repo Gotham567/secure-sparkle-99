@@ -17,7 +17,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    quote: "Depuis la fin des années 2000, AlgoSecure a fourni son expertise technique à plusieurs de nos projets complexes de cybersécurité, avec un niveau d'efficience, d'engagement et de suivi remarquables.",
+    quote: "Depuis la fin des années 2000, CloudSecure a fourni son expertise technique à plusieurs de nos projets complexes de cybersécurité, avec un niveau d'efficience, d'engagement et de suivi remarquables.",
     author: "Direction Sécurité Numérique",
     role: "",
     company: "Groupe SNCF",
