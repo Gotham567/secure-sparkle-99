@@ -65,7 +65,7 @@ serve(async (req) => {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "AlgoSecure <onboarding@resend.dev>",
+        from: "CloudSecure <onboarding@resend.dev>",
         to: [CONTACT_EMAIL],
         subject,
         html: htmlContent,

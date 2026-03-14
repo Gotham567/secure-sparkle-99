@@ -21,7 +21,7 @@ const TrustSection = () => {
             Ils nous font <span className="text-gradient">confiance</span>
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto text-lg">
-            Grands comptes, ETI, PME et acteurs publics sécurisent leurs systèmes avec AlgoSecure.
+            Grands comptes, ETI, PME et acteurs publics sécurisent leurs systèmes avec CloudSecure.
           </p>
         </motion.div>
 

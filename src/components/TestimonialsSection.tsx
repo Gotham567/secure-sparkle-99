@@ -38,7 +38,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    quote: "Nous souhaitions réaliser un audit Red Team de nos installations, les équipes d'AlgoSecure ont été très efficaces. Les retours ont été très bien expliqués.",
+    quote: "Nous souhaitions réaliser un audit Red Team de nos installations, les équipes de CloudSecure ont été très efficaces. Les retours ont été très bien expliqués.",
     author: "Cyril B.",
     role: "RSSI",
     company: "Métropole de Grenoble",

@@ -35,7 +35,7 @@ const Navbar = () => {
             <div className="absolute inset-0 bg-primary/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
           <span className="font-heading text-xl font-bold text-foreground tracking-tight">
-            algo<span className="text-gradient">secure</span>
+            cloud<span className="text-gradient">secure</span>
           </span>
         </a>
 

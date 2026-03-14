@@ -20,7 +20,7 @@ const certs = [
     icon: Building2,
     title: "Campus Cyber",
     subtitle: "Membre fondateur",
-    desc: "AlgoSecure est membre du Campus Cyber, le lieu totem de la cybersécurité en France, renforçant notre réseau et expertise collective.",
+    desc: "CloudSecure est membre du Campus Cyber, le lieu totem de la cybersécurité en France, renforçant notre réseau et expertise collective.",
     items: ["Réseau national", "Veille collaborative", "Innovation partagée", "Écosystème cyber"],
   },
 ];

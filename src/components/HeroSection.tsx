@@ -118,7 +118,7 @@ const HeroSection = () => {
                 <span className="text-xs text-muted-foreground ml-3 font-mono">security-scan.sh</span>
               </div>
                 <div className="p-6 font-mono text-sm leading-7 text-muted-foreground">
-                <div><span className="text-primary">$</span> algosecure --cloud-audit --target aws,azure</div>
+                <div><span className="text-primary">$</span> cloudsecure --cloud-audit --target aws,azure</div>
                 <div className="text-foreground/60 mt-1">→ Scanning cloud infrastructure...</div>
                 <div className="text-foreground/60">→ Checking IAM policies, S3 buckets, VPC configs...</div>
                 <div className="mt-3"><span className="text-primary">$</span> Running AI-powered threat detection</div>
