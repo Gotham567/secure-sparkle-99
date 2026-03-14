@@ -103,7 +103,7 @@ const NewsletterSection = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="bg-gradient-primary text-primary-foreground px-7 py-4 rounded-xl font-semibold text-sm hover:shadow-glow transition-all duration-300 flex items-center justify-center gap-2 group whitespace-nowrap disabled:opacity-50"
+                  className="bg-gradient-primary text-primary-foreground px-7 py-4 rounded-xl font-semibold text-sm hover:shadow-glow transition-all duration-300 flex items-center justify-center gap-2 group whitespace-nowrap disabled:opacity-50 min-h-[48px]"
                 >
                   {loading ? (
                     <Loader2 className="h-4 w-4 animate-spin" />
