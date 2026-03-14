@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Shield, ExternalLink } from "lucide-react";
 
@@ -7,6 +8,7 @@ const navLinks = [
   { label: "Certifications", href: "#certifications" },
   { label: "À propos", href: "#about" },
   { label: "Témoignages", href: "#testimonials" },
+  { label: "Actualités", href: "/actualites", isRoute: true },
 ];
 
 const Navbar = () => {
@@ -29,7 +31,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        <a href="#" className="flex items-center gap-2.5 group">
+        <Link to="/" className="flex items-center gap-2.5 group">
           <div className="relative">
             <Shield className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />
             <div className="absolute inset-0 bg-primary/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -37,19 +39,29 @@ const Navbar = () => {
           <span className="font-heading text-xl font-bold text-foreground tracking-tight">
             cloud<span className="text-gradient">secure</span>
           </span>
-        </a>
+        </Link>
 
         {/* Desktop */}
         <div className="hidden lg:flex items-center gap-1">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="relative text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200 px-4 py-2 rounded-lg hover:bg-muted/30"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            link.isRoute ? (
+              <Link
+                key={link.label}
+                to={link.href}
+                className="relative text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200 px-4 py-2 rounded-lg hover:bg-muted/30"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                className="relative text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200 px-4 py-2 rounded-lg hover:bg-muted/30"
+              >
+                {link.label}
+              </a>
+            )
+          )}
           <div className="w-px h-6 bg-border mx-3" />
           <a
             href="#contact"
@@ -79,16 +91,27 @@ const Navbar = () => {
             className="lg:hidden glass-strong border-t border-border/50"
           >
             <div className="flex flex-col gap-1 p-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className="text-sm font-medium text-muted-foreground hover:text-foreground px-4 py-3 rounded-lg hover:bg-muted/30 transition-colors"
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                link.isRoute ? (
+                  <Link
+                    key={link.label}
+                    to={link.href}
+                    onClick={() => setOpen(false)}
+                    className="text-sm font-medium text-muted-foreground hover:text-foreground px-4 py-3 rounded-lg hover:bg-muted/30 transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className="text-sm font-medium text-muted-foreground hover:text-foreground px-4 py-3 rounded-lg hover:bg-muted/30 transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                )
+              )}
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}

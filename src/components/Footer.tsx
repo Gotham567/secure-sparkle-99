@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Shield, Linkedin, Twitter, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
@@ -42,9 +43,10 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-bold text-foreground mb-4 text-sm">Entreprise</h4>
             <div className="space-y-3">
-              {["Qui sommes-nous", "Nos certifications", "AlgoLightHouse", "Livres blancs", "Blog"].map((item) => (
+              {["Qui sommes-nous", "Nos certifications", "AlgoLightHouse", "Livres blancs"].map((item) => (
                 <a key={item} href="#" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">{item}</a>
               ))}
+              <Link to="/actualites" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">Actualités</Link>
             </div>
           </div>
 
