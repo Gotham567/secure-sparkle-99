@@ -91,16 +91,27 @@ const Navbar = () => {
             className="lg:hidden glass-strong border-t border-border/50"
           >
             <div className="flex flex-col gap-1 p-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className="text-sm font-medium text-muted-foreground hover:text-foreground px-4 py-3 rounded-lg hover:bg-muted/30 transition-colors"
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                link.isRoute ? (
+                  <Link
+                    key={link.label}
+                    to={link.href}
+                    onClick={() => setOpen(false)}
+                    className="text-sm font-medium text-muted-foreground hover:text-foreground px-4 py-3 rounded-lg hover:bg-muted/30 transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className="text-sm font-medium text-muted-foreground hover:text-foreground px-4 py-3 rounded-lg hover:bg-muted/30 transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                )
+              )}
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
