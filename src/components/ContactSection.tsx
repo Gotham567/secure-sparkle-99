@@ -86,14 +86,17 @@ const ContactSection = () => {
           ) : (
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="relative">
-                <User className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                <label htmlFor="contact-name" className="sr-only">Votre nom</label>
+                <User className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" aria-hidden="true" />
                 <input
+                  id="contact-name"
                   type="text"
                   value={form.name}
                   onChange={(e) => setForm(prev => ({ ...prev, name: e.target.value }))}
                   placeholder="Votre nom"
                   maxLength={100}
-                  className="w-full bg-card border border-border/80 rounded-xl pl-11 pr-5 py-4 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all"
+                  required
+                  className="w-full bg-card border border-border/80 rounded-xl pl-11 pr-5 py-4 text-base text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all"
                 />
               </div>
               <div className="relative">
