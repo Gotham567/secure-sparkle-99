@@ -5,6 +5,22 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import Actualites from "./pages/Actualites.tsx";
+import AuditCybersecuriteGuide from "./pages/articles/AuditCybersecuriteGuide.tsx";
+import PentestEntrepriseGuide from "./pages/articles/PentestEntrepriseGuide.tsx";
+import ChoisirPrestataireCybersecurite from "./pages/articles/ChoisirPrestataireCybersecurite.tsx";
+import CybersecuritePmeGuide from "./pages/articles/CybersecuritePmeGuide.tsx";
+import SecuriteCloudGuide from "./pages/articles/SecuriteCloudGuide.tsx";
+import AuditAwsGuide from "./pages/articles/AuditAwsGuide.tsx";
+import SecuriteAzureStartups from "./pages/articles/SecuriteAzureStartups.tsx";
+import IaCybersecuriteRisques from "./pages/articles/IaCybersecuriteRisques.tsx";
+import CoutAuditAws from "./pages/articles/CoutAuditAws.tsx";
+import AwsVsAzureSecurite from "./pages/articles/AwsVsAzureSecurite.tsx";
+import ErreursSecuriteCloud from "./pages/articles/ErreursSecuriteCloud.tsx";
+import SecuriserDonneesGoogleCloud from "./pages/articles/SecuriserDonneesGoogleCloud.tsx";
+import IaGenerativeRisques from "./pages/articles/IaGenerativeRisques.tsx";
+import AuditSecuriteCloudDebut from "./pages/articles/AuditSecuriteCloudDebut.tsx";
+import ZeroTrustGuide from "./pages/articles/ZeroTrustGuide.tsx";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +32,22 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/actualites" element={<Actualites />} />
+          <Route path="/actualites/audit-cybersecurite-guide" element={<AuditCybersecuriteGuide />} />
+          <Route path="/actualites/pentest-entreprise-guide" element={<PentestEntrepriseGuide />} />
+          <Route path="/actualites/choisir-prestataire-cybersecurite" element={<ChoisirPrestataireCybersecurite />} />
+          <Route path="/actualites/cybersecurite-pme-guide" element={<CybersecuritePmeGuide />} />
+          <Route path="/actualites/securite-cloud-guide" element={<SecuriteCloudGuide />} />
+          <Route path="/actualites/audit-aws-guide" element={<AuditAwsGuide />} />
+          <Route path="/actualites/securite-azure-startups" element={<SecuriteAzureStartups />} />
+          <Route path="/actualites/ia-cybersecurite-risques" element={<IaCybersecuriteRisques />} />
+          <Route path="/actualites/cout-audit-aws-2025" element={<CoutAuditAws />} />
+          <Route path="/actualites/aws-vs-azure-securite" element={<AwsVsAzureSecurite />} />
+          <Route path="/actualites/erreurs-securite-cloud" element={<ErreursSecuriteCloud />} />
+          <Route path="/actualites/securiser-donnees-google-cloud" element={<SecuriserDonneesGoogleCloud />} />
+          <Route path="/actualites/ia-generative-risques-securite" element={<IaGenerativeRisques />} />
+          <Route path="/actualites/audit-securite-cloud-debut" element={<AuditSecuriteCloudDebut />} />
+          <Route path="/actualites/zero-trust-architecture-guide" element={<ZeroTrustGuide />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Shield, ExternalLink } from "lucide-react";
 
@@ -7,6 +8,7 @@ const navLinks = [
   { label: "Certifications", href: "#certifications" },
   { label: "À propos", href: "#about" },
   { label: "Témoignages", href: "#testimonials" },
+  { label: "Actualités", href: "/actualites", isRoute: true },
 ];
 
 const Navbar = () => {
