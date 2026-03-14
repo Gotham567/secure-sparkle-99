@@ -53,7 +53,7 @@ serve(async (req) => {
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
           <h2 style="color: #22c55e; border-bottom: 2px solid #22c55e; padding-bottom: 10px;">Nouvel abonné à la newsletter</h2>
           <p><strong>Email :</strong> ${email}</p>
-          <p style="color: #888; font-size: 12px; margin-top: 20px;">Envoyé depuis le site AlgoSecure</p>
+          <p style="color: #888; font-size: 12px; margin-top: 20px;">Envoyé depuis le site CloudSecure</p>
         </div>
       `;
     }
