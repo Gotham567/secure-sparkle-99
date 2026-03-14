@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { Brain, Scale, Lightbulb, Users, MapPin, Award } from "lucide-react";
 
 const items = [
-  { icon: Brain, title: "Expertise pointue", desc: "Pentests, reverse engineering, analyse forensique, conseil ISO 27001. Une équipe de passionnés certifiés." },
-  { icon: Scale, title: "Indépendance totale", desc: "Aucun partenariat éditeur ou constructeur. Nos recommandations sont guidées uniquement par votre sécurité." },
-  { icon: Lightbulb, title: "Innovation continue", desc: "Partenariat avec un centre de recherche lyonnais. Thèse Cifre sur la sécurité des systèmes IoT." },
-  { icon: Users, title: "À taille humaine", desc: "Notre taille garantit une offre personnalisée, un interlocuteur dédié et une qualité de service optimale." },
-  { icon: MapPin, title: "Couverture nationale", desc: "Siège à Lyon. Présents à Paris, Saint-Étienne, Grenoble, Annecy et sur tout le territoire." },
-  { icon: Award, title: "Doublement certifiés", desc: "PASSI et ISO 27001 : nous appliquons les standards de sécurité les plus exigeants." },
+  { icon: Brain, title: "Expertise Cloud & IA", desc: "Audit AWS, Azure, GCP. Sécurité Kubernetes, DevSecOps et détection de menaces par IA. Une équipe certifiée cloud." },
+  { icon: Scale, title: "Indépendance totale", desc: "Aucun partenariat éditeur cloud. Nos recommandations sont guidées uniquement par la sécurité de vos infrastructures." },
+  { icon: Lightbulb, title: "Innovation IA", desc: "Recherche appliquée en cybersécurité IA. Détection automatisée, analyse comportementale et scoring de risques cloud." },
+  { icon: Users, title: "Partenaire des startups", desc: "Nous comprenons les enjeux des startups et entreprises tech : agilité, scalabilité cloud et conformité rapide." },
+  { icon: MapPin, title: "Couverture nationale", desc: "Siège à Lyon. Présents à Paris, Saint-Étienne, Grenoble, Annecy et intervention à distance sur vos clouds." },
+  { icon: Award, title: "Doublement certifiés", desc: "PASSI et ISO 27001 : nous appliquons les standards de sécurité cloud les plus exigeants du marché." },
 ];
 
 const DifferentiatorsSection = () => {
@@ -29,8 +29,8 @@ const DifferentiatorsSection = () => {
             Ce qui nous <span className="text-gradient">différencie</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            AlgoSecure est un cabinet de conseil indépendant spécialisé en SSI.
-            Une équipe lyonnaise de passionnés au plus proche de vos besoins en cybersécurité.
+            AlgoSecure est un cabinet indépendant spécialisé en sécurité cloud et cybersécurité IA.
+            Le partenaire de confiance des startups et entreprises tech pour sécuriser AWS, Azure et vos infrastructures cloud.
           </p>
         </motion.div>
 
