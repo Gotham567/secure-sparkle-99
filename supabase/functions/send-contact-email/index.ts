@@ -48,7 +48,7 @@ serve(async (req) => {
         </div>
       `;
     } else {
-      subject = `[AlgoSecure] Nouvel abonné newsletter`;
+      subject = `[CloudSecure] Nouvel abonné newsletter`;
       htmlContent = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
           <h2 style="color: #22c55e; border-bottom: 2px solid #22c55e; padding-bottom: 10px;">Nouvel abonné à la newsletter</h2>
