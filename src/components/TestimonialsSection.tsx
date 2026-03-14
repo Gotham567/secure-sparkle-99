@@ -10,7 +10,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    quote: "Très à l'écoute, les équipes d'AlgoSecure m'ont conseillé des solutions pertinentes. Leur prestation toute aussi pointue que bienveillante a été une véritable plus-value dans la sécurisation de notre SI.",
+    quote: "Très à l'écoute, les équipes de CloudSecure m'ont conseillé des solutions pertinentes. Leur prestation toute aussi pointue que bienveillante a été une véritable plus-value dans la sécurisation de notre SI.",
     author: "Caroline G.",
     role: "Directrice",
     company: "MSD",
