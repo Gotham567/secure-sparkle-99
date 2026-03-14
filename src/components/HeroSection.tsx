@@ -34,7 +34,7 @@ const HeroSection = () => {
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background layers */}
       <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="w-full h-full object-cover opacity-30" loading="eager" />
+        <img src={heroBg} alt="Infrastructure cloud sécurisée" className="w-full h-full object-cover opacity-30" loading="eager" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background" />
       </div>
       <GridBackground />

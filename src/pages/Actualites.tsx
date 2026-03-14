@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { ArrowRight, Calendar, Clock, Tag, BookOpen, FileText } from "lucide-react";
 
 interface Article {
@@ -196,6 +197,10 @@ const ArticleCard = ({ article }: { article: Article }) => (
 const Actualites = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Actualités & Ressources Cybersécurité"
+        description="Guides complets, analyses et articles sur la cybersécurité cloud, les audits AWS/Azure, les tests d'intrusion et la conformité NIS2 pour les PME et startups."
+      />
       <Navbar />
       <section className="pt-32 pb-20">
         <div className="container mx-auto px-6">

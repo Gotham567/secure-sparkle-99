@@ -89,18 +89,21 @@ const NewsletterSection = () => {
               </div>
             ) : (
               <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+                <label htmlFor="newsletter-email" className="sr-only">Adresse e-mail</label>
                 <input
+                  id="newsletter-email"
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="votre@email.com"
                   maxLength={255}
-                  className="flex-1 bg-card border border-border/80 rounded-xl px-5 py-4 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all"
+                  required
+                  className="flex-1 bg-card border border-border/80 rounded-xl px-5 py-4 text-base text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all"
                 />
                 <button
                   type="submit"
                   disabled={loading}
-                  className="bg-gradient-primary text-primary-foreground px-7 py-4 rounded-xl font-semibold text-sm hover:shadow-glow transition-all duration-300 flex items-center justify-center gap-2 group whitespace-nowrap disabled:opacity-50"
+                  className="bg-gradient-primary text-primary-foreground px-7 py-4 rounded-xl font-semibold text-sm hover:shadow-glow transition-all duration-300 flex items-center justify-center gap-2 group whitespace-nowrap disabled:opacity-50 min-h-[48px]"
                 >
                   {loading ? (
                     <Loader2 className="h-4 w-4 animate-spin" />

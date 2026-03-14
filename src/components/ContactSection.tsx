@@ -86,42 +86,51 @@ const ContactSection = () => {
           ) : (
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="relative">
-                <User className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                <label htmlFor="contact-name" className="sr-only">Votre nom</label>
+                <User className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" aria-hidden="true" />
                 <input
+                  id="contact-name"
                   type="text"
                   value={form.name}
                   onChange={(e) => setForm(prev => ({ ...prev, name: e.target.value }))}
                   placeholder="Votre nom"
                   maxLength={100}
-                  className="w-full bg-card border border-border/80 rounded-xl pl-11 pr-5 py-4 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all"
+                  required
+                  className="w-full bg-card border border-border/80 rounded-xl pl-11 pr-5 py-4 text-base text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all"
                 />
               </div>
               <div className="relative">
-                <Mail className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                <label htmlFor="contact-email" className="sr-only">Votre email</label>
+                <Mail className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" aria-hidden="true" />
                 <input
+                  id="contact-email"
                   type="email"
                   value={form.email}
                   onChange={(e) => setForm(prev => ({ ...prev, email: e.target.value }))}
                   placeholder="votre@email.com"
                   maxLength={255}
-                  className="w-full bg-card border border-border/80 rounded-xl pl-11 pr-5 py-4 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all"
+                  required
+                  className="w-full bg-card border border-border/80 rounded-xl pl-11 pr-5 py-4 text-base text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all"
                 />
               </div>
               <div className="relative">
-                <MessageSquare className="absolute left-4 top-4 h-4 w-4 text-muted-foreground" />
+                <label htmlFor="contact-message" className="sr-only">Votre message</label>
+                <MessageSquare className="absolute left-4 top-4 h-4 w-4 text-muted-foreground" aria-hidden="true" />
                 <textarea
+                  id="contact-message"
                   value={form.message}
                   onChange={(e) => setForm(prev => ({ ...prev, message: e.target.value }))}
                   placeholder="Décrivez votre besoin..."
                   maxLength={1000}
                   rows={5}
-                  className="w-full bg-card border border-border/80 rounded-xl pl-11 pr-5 py-4 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all resize-none"
+                  required
+                  className="w-full bg-card border border-border/80 rounded-xl pl-11 pr-5 py-4 text-base text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/40 transition-all resize-none"
                 />
               </div>
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-gradient-primary text-primary-foreground px-7 py-4 rounded-xl font-semibold text-sm hover:shadow-glow transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50"
+                className="w-full bg-gradient-primary text-primary-foreground px-7 py-4 rounded-xl font-semibold text-sm hover:shadow-glow transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50 min-h-[48px]"
               >
                 {loading ? (
                   <>
