@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { ArrowRight, Calendar, Clock, Tag, BookOpen, FileText } from "lucide-react";
 
 interface Article {
