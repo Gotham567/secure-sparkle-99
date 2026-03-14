@@ -31,7 +31,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    quote: "Les consultants ont été efficaces et très professionnels. Les résultats de ces deux audits nous ont été très utiles. Je recommande AlgoSecure.",
+    quote: "Les consultants ont été efficaces et très professionnels. Les résultats de ces deux audits nous ont été très utiles. Je recommande CloudSecure.",
     author: "Jean-Baptiste B.",
     role: "Technology Ops Manager",
     company: "Cosmo Tech",
