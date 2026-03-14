@@ -29,8 +29,8 @@ const DifferentiatorsSection = () => {
             Ce qui nous <span className="text-gradient">différencie</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            AlgoSecure est un cabinet de conseil indépendant spécialisé en SSI.
-            Une équipe lyonnaise de passionnés au plus proche de vos besoins en cybersécurité.
+            AlgoSecure est un cabinet indépendant spécialisé en sécurité cloud et cybersécurité IA.
+            Le partenaire de confiance des startups et entreprises tech pour sécuriser AWS, Azure et vos infrastructures cloud.
           </p>
         </motion.div>
 

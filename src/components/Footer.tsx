@@ -32,7 +32,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-bold text-foreground mb-4 text-sm">Services</h4>
             <div className="space-y-3">
-              {["Tests d'intrusion", "Audit de configuration", "Audit d'architecture", "Accompagnement RSSI", "Formation"].map((item) => (
+              {["Audit AWS & Azure", "Sécurité Cloud", "Pentest Cloud", "Conformité NIS2", "RSSI externalisé"].map((item) => (
                 <a key={item} href="#services" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">{item}</a>
               ))}
             </div>
