@@ -6,6 +6,7 @@ import AlgoLightHouseSection from "@/components/AlgoLightHouseSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import DifferentiatorsSection from "@/components/DifferentiatorsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import ContactSection from "@/components/ContactSection";
 import NewsletterSection from "@/components/NewsletterSection";
 import Footer from "@/components/Footer";
 
@@ -20,6 +21,7 @@ const Index = () => {
       <CertificationsSection />
       <DifferentiatorsSection />
       <TestimonialsSection />
+      <ContactSection />
       <NewsletterSection />
       <Footer />
     </div>
