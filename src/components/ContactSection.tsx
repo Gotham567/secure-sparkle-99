@@ -130,7 +130,7 @@ const ContactSection = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-gradient-primary text-primary-foreground px-7 py-4 rounded-xl font-semibold text-sm hover:shadow-glow transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50"
+                className="w-full bg-gradient-primary text-primary-foreground px-7 py-4 rounded-xl font-semibold text-sm hover:shadow-glow transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-50 min-h-[48px]"
               >
                 {loading ? (
                   <>
