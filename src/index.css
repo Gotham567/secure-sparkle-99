@@ -126,4 +126,41 @@
   .animate-scan {
     animation: scan-line 8s linear infinite;
   }
+
+  .prose-custom h2 {
+    @apply font-heading text-2xl font-bold text-foreground mt-12 mb-4;
+  }
+  .prose-custom h3 {
+    @apply font-heading text-xl font-semibold text-foreground mt-8 mb-3;
+  }
+  .prose-custom p {
+    @apply text-muted-foreground leading-relaxed mb-4;
+  }
+  .prose-custom ul, .prose-custom ol {
+    @apply text-muted-foreground space-y-2 mb-6 pl-6;
+  }
+  .prose-custom ul {
+    @apply list-disc;
+  }
+  .prose-custom ol {
+    @apply list-decimal;
+  }
+  .prose-custom li {
+    @apply leading-relaxed;
+  }
+  .prose-custom strong {
+    @apply text-foreground font-semibold;
+  }
+  .prose-custom blockquote {
+    @apply border-l-2 border-primary/40 pl-6 py-2 my-6 italic text-muted-foreground;
+  }
+  .prose-custom .info-box {
+    @apply glass rounded-xl p-6 my-8 border-glow;
+  }
+  .prose-custom .info-box h4 {
+    @apply font-heading text-lg font-semibold text-foreground mb-2;
+  }
+  .prose-custom .info-box p {
+    @apply text-sm;
+  }
 }
