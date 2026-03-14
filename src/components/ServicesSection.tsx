@@ -40,12 +40,12 @@ const ServicesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <span className="text-xs font-semibold tracking-widest uppercase text-primary mb-4 block">Nos expertises</span>
+          <span className="text-xs font-semibold tracking-widest uppercase text-primary mb-4 block">Nos expertises cloud & IA</span>
           <h2 className="font-heading text-4xl md:text-5xl font-bold mb-5">
-            Des services de <span className="text-gradient">confiance</span>
+            Sécurité cloud de <span className="text-gradient">confiance</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto text-lg">
-            Une approche complète de la cybersécurité, de l'audit technique au conseil stratégique.
+            Audit AWS, Azure, sécurité IA et conformité pour startups et entreprises tech.
           </p>
         </motion.div>
 

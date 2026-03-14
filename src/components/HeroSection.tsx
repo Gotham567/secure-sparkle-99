@@ -117,15 +117,15 @@ const HeroSection = () => {
                 <div className="w-3 h-3 rounded-full bg-primary/70" />
                 <span className="text-xs text-muted-foreground ml-3 font-mono">security-scan.sh</span>
               </div>
-              <div className="p-6 font-mono text-sm leading-7 text-muted-foreground">
-                <div><span className="text-primary">$</span> algosecure --scan --target infrastructure</div>
-                <div className="text-foreground/60 mt-1">→ Initializing PASSI-certified scan engine...</div>
-                <div className="text-foreground/60">→ Loading vulnerability databases...</div>
-                <div className="mt-3"><span className="text-primary">$</span> Running pentest module</div>
-                <div className="text-primary/80 mt-1">✓ External surface mapping complete</div>
-                <div className="text-primary/80">✓ Configuration audit passed</div>
-                <div className="text-primary/80">✓ Architecture review validated</div>
-                <div className="mt-3"><span className="text-primary">$</span> Generating report</div>
+                <div className="p-6 font-mono text-sm leading-7 text-muted-foreground">
+                <div><span className="text-primary">$</span> algosecure --cloud-audit --target aws,azure</div>
+                <div className="text-foreground/60 mt-1">→ Scanning cloud infrastructure...</div>
+                <div className="text-foreground/60">→ Checking IAM policies, S3 buckets, VPC configs...</div>
+                <div className="mt-3"><span className="text-primary">$</span> Running AI-powered threat detection</div>
+                <div className="text-primary/80 mt-1">✓ AWS security posture analyzed</div>
+                <div className="text-primary/80">✓ Azure AD configuration audited</div>
+                <div className="text-primary/80">✓ Cloud misconfigurations detected: 12</div>
+                <div className="mt-3"><span className="text-primary">$</span> Generating cloud security report</div>
                 <div className="text-foreground mt-1 flex items-center gap-2">
                   → Rapport d'audit prêt
                   <span className="inline-block w-2 h-4 bg-primary animate-pulse" />
