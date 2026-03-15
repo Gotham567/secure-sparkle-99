@@ -21,7 +21,8 @@ import SecuriserDonneesGoogleCloud from "./pages/articles/SecuriserDonneesGoogle
 import IaGenerativeRisques from "./pages/articles/IaGenerativeRisques.tsx";
 import AuditSecuriteCloudDebut from "./pages/articles/AuditSecuriteCloudDebut.tsx";
 import ZeroTrustGuide from "./pages/articles/ZeroTrustGuide.tsx";
-
+import FAQ from "./pages/FAQ.tsx";
+import Tarifs from "./pages/Tarifs.tsx";
 const queryClient = new QueryClient();
 
 const App = () => (
