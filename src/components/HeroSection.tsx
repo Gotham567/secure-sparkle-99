@@ -1,13 +1,7 @@
-import { motion } from "framer-motion";
-import { Search, ShieldCheck, Phone, Award, ArrowRight, ChevronDown } from "lucide-react";
+import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import { Search, ShieldCheck, Phone, Award, ArrowRight, ChevronDown, Shield, Lock, Server, Globe } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-
-const services = [
-  { icon: Search, title: "Audit", desc: "Tests d'intrusion, audits de configuration et d'architecture", color: "from-primary/20 to-primary/5" },
-  { icon: ShieldCheck, title: "Conseil", desc: "Accompagnement RSSI, conformité, formations", color: "from-accent/20 to-accent/5" },
-  { icon: Phone, title: "CERT", desc: "Réponse à incident, analyse forensique, gestion de crise", color: "from-primary/20 to-primary/5" },
-  { icon: Award, title: "Certifications", desc: "PASSI, ISO 27001, Cyber Expert, OSEP, OSCP", color: "from-accent/20 to-accent/5" },
-];
+import { useEffect, useRef } from "react";
 
 const GridBackground = () => (
   <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -21,18 +15,38 @@ const GridBackground = () => (
         backgroundSize: "60px 60px",
       }}
     />
-    {/* Scan line */}
     <div className="absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent animate-scan opacity-30" />
-    {/* Glow orbs */}
     <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
     <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/5 rounded-full blur-[100px]" />
   </div>
 );
 
+function AnimatedCounter({ target, suffix = "" }: { target: number; suffix?: string }) {
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, (v) => Math.round(v));
+  const ref = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    const controls = animate(count, target, { duration: 2, ease: "easeOut" });
+    const unsub = rounded.on("change", (v) => {
+      if (ref.current) ref.current.textContent = v + suffix;
+    });
+    return () => { controls.stop(); unsub(); };
+  }, [target, suffix, count, rounded]);
+
+  return <span ref={ref}>0{suffix}</span>;
+}
+
+const stats = [
+  { icon: Shield, value: 500, suffix: "+", label: "Audits réalisés", desc: "Tests d'intrusion & audits cloud" },
+  { icon: Lock, value: 15, suffix: "+", label: "Années d'expertise", desc: "En cybersécurité offensive" },
+  { icon: Server, value: 200, suffix: "+", label: "Infrastructures sécurisées", desc: "AWS, Azure & GCP" },
+  { icon: Globe, value: 100, suffix: "%", label: "Indépendant", desc: "Conseil objectif & impartial" },
+];
+
 const HeroSection = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background layers */}
       <div className="absolute inset-0">
         <img src={heroBg} alt="Infrastructure cloud sécurisée" className="w-full h-full object-cover opacity-30" loading="eager" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background" />
@@ -82,58 +96,53 @@ const HeroSection = () => {
                 </a>
               </div>
             </motion.div>
-
-            {/* Stats row */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="flex gap-10 mt-14 pt-10 border-t border-border/50"
-            >
-              {[
-                { value: "15+", label: "Années d'expertise" },
-                { value: "500+", label: "Audits réalisés" },
-                { value: "100%", label: "Indépendant" },
-              ].map((stat) => (
-                <div key={stat.label}>
-                  <div className="font-heading text-3xl font-bold text-gradient">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
-                </div>
-              ))}
-            </motion.div>
           </div>
 
-          {/* Right - Terminal effect */}
+          {/* Right - Animated Stats */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="hidden lg:block"
+            className="hidden lg:grid grid-cols-2 gap-5"
           >
-            <div className="glass-strong rounded-2xl overflow-hidden shadow-card border-glow">
-              <div className="flex items-center gap-2 px-5 py-3.5 border-b border-border/50">
-                <div className="w-3 h-3 rounded-full bg-destructive/70" />
-                <div className="w-3 h-3 rounded-full bg-yellow-500/70" />
-                <div className="w-3 h-3 rounded-full bg-primary/70" />
-                <span className="text-xs text-muted-foreground ml-3 font-mono">security-scan.sh</span>
-              </div>
-                <div className="p-6 font-mono text-sm leading-7 text-muted-foreground">
-                <div><span className="text-primary">$</span> cloudsecure --cloud-audit --target aws,azure</div>
-                <div className="text-foreground/60 mt-1">→ Scanning cloud infrastructure...</div>
-                <div className="text-foreground/60">→ Checking IAM policies, S3 buckets, VPC configs...</div>
-                <div className="mt-3"><span className="text-primary">$</span> Running AI-powered threat detection</div>
-                <div className="text-primary/80 mt-1">✓ AWS security posture analyzed</div>
-                <div className="text-primary/80">✓ Azure AD configuration audited</div>
-                <div className="text-primary/80">✓ Cloud misconfigurations detected: 12</div>
-                <div className="mt-3"><span className="text-primary">$</span> Generating cloud security report</div>
-                <div className="text-foreground mt-1 flex items-center gap-2">
-                  → Rapport d'audit prêt
-                  <span className="inline-block w-2 h-4 bg-primary animate-pulse" />
+            {stats.map((stat, i) => (
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.5 + i * 0.15 }}
+                className="glass-strong rounded-2xl p-6 border-glow hover:shadow-glow transition-all duration-500 group"
+              >
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <stat.icon className="h-6 w-6 text-primary" />
                 </div>
-              </div>
-            </div>
+                <div className="font-heading text-4xl font-bold text-gradient mb-1">
+                  <AnimatedCounter target={stat.value} suffix={stat.suffix} />
+                </div>
+                <div className="text-sm font-semibold text-foreground mb-1">{stat.label}</div>
+                <div className="text-xs text-muted-foreground">{stat.desc}</div>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
+
+        {/* Mobile stats row */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="grid grid-cols-2 gap-4 mt-12 lg:hidden"
+        >
+          {stats.map((stat, i) => (
+            <div key={stat.label} className="glass-strong rounded-xl p-4 border-glow text-center">
+              <stat.icon className="h-5 w-5 text-primary mx-auto mb-2" />
+              <div className="font-heading text-2xl font-bold text-gradient">
+                <AnimatedCounter target={stat.value} suffix={stat.suffix} />
+              </div>
+              <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
+            </div>
+          ))}
+        </motion.div>
 
         {/* Scroll indicator */}
         <motion.div
@@ -142,10 +151,7 @@ const HeroSection = () => {
           transition={{ delay: 1.5 }}
           className="flex justify-center mt-16"
         >
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          >
+          <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 2, repeat: Infinity }}>
             <ChevronDown className="h-6 w-6 text-muted-foreground/50" />
           </motion.div>
         </motion.div>
