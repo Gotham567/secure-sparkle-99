@@ -11,6 +11,7 @@ import NewsletterSection from "@/components/NewsletterSection";
 import Footer from "@/components/Footer";
 import TawkTo from "@/components/TawkTo";
 import SEOHead from "@/components/SEOHead";
+import FloatingCTA from "@/components/FloatingCTA";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       />
       <TawkTo />
       <Navbar />
+      <FloatingCTA />
       <HeroSection />
       <ServicesSection />
       <TrustSection />

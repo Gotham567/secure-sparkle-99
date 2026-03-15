@@ -7,7 +7,8 @@ const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Certifications", href: "#certifications" },
   { label: "À propos", href: "#about" },
-  { label: "Témoignages", href: "#testimonials" },
+  { label: "Tarifs", href: "/tarifs", isRoute: true },
+  { label: "FAQ", href: "/faq", isRoute: true },
   { label: "Actualités", href: "/actualites", isRoute: true },
 ];
 

@@ -21,7 +21,8 @@ import SecuriserDonneesGoogleCloud from "./pages/articles/SecuriserDonneesGoogle
 import IaGenerativeRisques from "./pages/articles/IaGenerativeRisques.tsx";
 import AuditSecuriteCloudDebut from "./pages/articles/AuditSecuriteCloudDebut.tsx";
 import ZeroTrustGuide from "./pages/articles/ZeroTrustGuide.tsx";
-
+import FAQ from "./pages/FAQ.tsx";
+import Tarifs from "./pages/Tarifs.tsx";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -48,6 +49,8 @@ const App = () => (
           <Route path="/actualites/ia-generative-risques-securite" element={<IaGenerativeRisques />} />
           <Route path="/actualites/audit-securite-cloud-debut" element={<AuditSecuriteCloudDebut />} />
           <Route path="/actualites/zero-trust-architecture-guide" element={<ZeroTrustGuide />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/tarifs" element={<Tarifs />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

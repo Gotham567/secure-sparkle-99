@@ -63,7 +63,8 @@ const Footer = () => {
             <nav aria-label="Entreprise" className="space-y-3">
               <a href={isHome ? "#about" : "/#about"} onClick={(e) => handleAnchorClick(e, "#about")} className="block text-sm text-muted-foreground hover:text-foreground transition-colors">Qui sommes-nous</a>
               <a href={isHome ? "#certifications" : "/#certifications"} onClick={(e) => handleAnchorClick(e, "#certifications")} className="block text-sm text-muted-foreground hover:text-foreground transition-colors">Nos certifications</a>
-              <a href="https://algolighthouse.fr/" target="_blank" rel="noopener noreferrer" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">CloudLightHouse</a>
+              <Link to="/tarifs" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">Tarifs</Link>
+              <Link to="/faq" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">FAQ</Link>
               <Link to="/actualites" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">Actualités</Link>
             </nav>
           </div>
