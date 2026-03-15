@@ -49,6 +49,8 @@ const App = () => (
           <Route path="/actualites/ia-generative-risques-securite" element={<IaGenerativeRisques />} />
           <Route path="/actualites/audit-securite-cloud-debut" element={<AuditSecuriteCloudDebut />} />
           <Route path="/actualites/zero-trust-architecture-guide" element={<ZeroTrustGuide />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/tarifs" element={<Tarifs />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
