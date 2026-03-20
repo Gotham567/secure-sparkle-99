@@ -21,6 +21,9 @@ import SecuriserDonneesGoogleCloud from "./pages/articles/SecuriserDonneesGoogle
 import IaGenerativeRisques from "./pages/articles/IaGenerativeRisques.tsx";
 import AuditSecuriteCloudDebut from "./pages/articles/AuditSecuriteCloudDebut.tsx";
 import ZeroTrustGuide from "./pages/articles/ZeroTrustGuide.tsx";
+import Soc2ComplianceGuide from "./pages/articles/Soc2ComplianceGuide.tsx";
+import SecuriteKubernetesGuide from "./pages/articles/SecuriteKubernetesGuide.tsx";
+import ConformiteDoraGuide from "./pages/articles/ConformiteDoraGuide.tsx";
 import FAQ from "./pages/FAQ.tsx";
 import Tarifs from "./pages/Tarifs.tsx";
 const queryClient = new QueryClient();
