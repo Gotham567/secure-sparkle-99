@@ -16,6 +16,33 @@ interface Article {
 
 const articles: Article[] = [
   {
+    title: "SOC 2 : guide complet pour les entreprises cloud en 2026",
+    description: "Tout savoir sur la certification SOC 2 : types de rapports, critères TSC, processus d'audit et bonnes pratiques pour réussir votre mise en conformité.",
+    slug: "soc2-compliance-guide",
+    date: "18 mars 2026",
+    readTime: "16 min",
+    category: "Conformité",
+    isPillar: false,
+  },
+  {
+    title: "Sécurité Kubernetes : guide complet pour protéger vos clusters",
+    description: "Maîtrisez la sécurité de vos clusters Kubernetes : RBAC, Network Policies, Pod Security, scanning d'images et bonnes pratiques DevSecOps.",
+    slug: "securite-kubernetes-guide",
+    date: "16 mars 2026",
+    readTime: "17 min",
+    category: "Sécurité Cloud",
+    isPillar: false,
+  },
+  {
+    title: "Conformité DORA : ce que les entreprises tech doivent savoir",
+    description: "Guide complet sur le règlement DORA : obligations, calendrier, piliers de conformité et plan d'action pour les entreprises technologiques et financières.",
+    slug: "conformite-dora-guide",
+    date: "14 mars 2026",
+    readTime: "15 min",
+    category: "Conformité",
+    isPillar: false,
+  },
+  {
     title: "Qu'est-ce qu'un audit cybersécurité et pourquoi en faire un ?",
     description: "Découvrez en détail ce qu'est un audit de cybersécurité, ses différentes étapes, ses bénéfices concrets et pourquoi il est indispensable pour protéger votre PME.",
     slug: "audit-cybersecurite-guide",
