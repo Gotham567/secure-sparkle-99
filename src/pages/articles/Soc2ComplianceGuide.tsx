@@ -72,7 +72,7 @@ const Soc2ComplianceGuide = () => (
     </div>
 
     <h2>Conclusion</h2>
-    <p>Le SOC 2 n'est plus un luxe réservé aux grandes entreprises — c'est un prérequis commercial pour toute entreprise cloud qui ambitionne de travailler avec des clients exigeants. La clé du succès réside dans une approche progressive : commencez par un Type I ciblé sur la sécurité, automatisez la collecte de preuves, puis évoluez vers un Type II complet. Avec la bonne préparation et le bon accompagnement, le SOC 2 devient un accélérateur de croissance plutôt qu'une contrainte.</p>
+    <p>Le SOC 2 n'est plus un luxe réservé aux grandes entreprises — c'est un prérequis commercial pour toute entreprise cloud qui ambitionne de travailler avec des clients exigeants. La clé du succès réside dans une approche progressive : commencez par un Type I ciblé sur la sécurité, automatisez la collecte de preuves, puis évoluez vers un Type II complet. Si vous cherchez un accompagnement sur les audits de conformité ISO 27001 et SOC 2, <a href="https://securecyber.fr" target="_blank" rel="noopener noreferrer">SecureCyber</a> propose des prestations adaptées aux entreprises tech. Avec la bonne préparation et le bon accompagnement, le SOC 2 devient un accélérateur de croissance plutôt qu'une contrainte.</p>
   </BlogLayout>
 );
 

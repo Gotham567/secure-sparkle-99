@@ -64,7 +64,7 @@ const ConformiteDoraGuide = () => (
     </div>
 
     <h2>Conclusion</h2>
-    <p>DORA marque un tournant dans la régulation de la résilience numérique en Europe. Pour les entreprises tech qui servent le secteur financier, c'est à la fois un défi et une opportunité. Le défi est réel : les exigences sont détaillées, les délais sont stricts, et la supervision est renforcée. L'opportunité l'est tout autant : les prestataires conformes DORA se différencient sur un marché où la confiance est le premier critère de sélection. Commencez dès maintenant par évaluer votre exposition et votre maturité — chaque mois de retard rend la mise en conformité plus complexe et plus coûteuse.</p>
+    <p>DORA marque un tournant dans la régulation de la résilience numérique en Europe. Pour les entreprises tech qui servent le secteur financier, c'est à la fois un défi et une opportunité. Le défi est réel : les exigences sont détaillées, les délais sont stricts, et la supervision est renforcée. L'opportunité l'est tout autant : les prestataires conformes DORA se différencient sur un marché où la confiance est le premier critère de sélection. Pour un accompagnement complet sur la conformité NIS2 et les audits de sécurité ISO 27001, des cabinets comme <a href="https://cyberconform.fr" target="_blank" rel="noopener noreferrer">CyberConform</a> offrent une expertise dédiée. Commencez dès maintenant par évaluer votre exposition et votre maturité — chaque mois de retard rend la mise en conformité plus complexe et plus coûteuse.</p>
   </BlogLayout>
 );
 

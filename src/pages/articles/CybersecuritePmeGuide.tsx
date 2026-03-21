@@ -164,7 +164,7 @@ const CybersecuritePmeGuide = () => {
         Mettre en place une cybersécurité efficace dans une PME est un projet de longue haleine qui nécessite une approche progressive et pragmatique. Ne cherchez pas à tout faire d'un coup : commencez par les fondamentaux, puis montez en maturité progressivement. L'essentiel est de démarrer, même modestement, et de maintenir une dynamique d'amélioration continue.
       </p>
       <p>
-        La cybersécurité n'est plus une option pour les PME, c'est un investissement stratégique qui protège votre activité, renforce la confiance de vos clients et partenaires, et assure votre conformité réglementaire. En suivant les étapes décrites dans ce guide, vous posez les bases d'une cybersécurité solide et adaptée à vos moyens.
+        La cybersécurité n'est plus une option pour les PME, c'est un investissement stratégique qui protège votre activité, renforce la confiance de vos clients et partenaires, et assure votre conformité réglementaire. En suivant les étapes décrites dans ce guide, vous posez les bases d'une cybersécurité solide et adaptée à vos moyens. Pour aller plus loin dans la sécurisation de votre entreprise, les experts de <a href="https://securecyber.fr" target="_blank" rel="noopener noreferrer">SecureCyber</a> proposent des audits cybersécurité et pentests adaptés aux PME et ETI.
       </p>
     </BlogLayout>
   );
