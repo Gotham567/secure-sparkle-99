@@ -94,6 +94,9 @@ const Footer = () => {
             <a href="#" className="hover:text-foreground transition-colors">Mentions légales</a>
             <a href="#" className="hover:text-foreground transition-colors">Confidentialité</a>
             <a href="#" className="hover:text-foreground transition-colors">RSE</a>
+            <span className="hidden md:inline text-border/50">|</span>
+            <a href="https://securecyber.fr" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">SecureCyber</a>
+            <a href="https://cyberconform.fr" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">CyberConform</a>
           </div>
         </div>
       </div>
