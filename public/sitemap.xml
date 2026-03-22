@@ -1,97 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/</loc>
+    <loc>https://cloud-secure.fr/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/tarifs</loc>
+    <loc>https://cloud-secure.fr/tarifs</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/faq</loc>
+    <loc>https://cloud-secure.fr/faq</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/actualites</loc>
+    <loc>https://cloud-secure.fr/actualites</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/actualites/audit-cybersecurite-guide</loc>
+    <loc>https://cloud-secure.fr/actualites/audit-cybersecurite-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/actualites/pentest-entreprise-guide</loc>
+    <loc>https://cloud-secure.fr/actualites/pentest-entreprise-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/actualites/choisir-prestataire-cybersecurite</loc>
+    <loc>https://cloud-secure.fr/actualites/choisir-prestataire-cybersecurite</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/actualites/cybersecurite-pme-guide</loc>
+    <loc>https://cloud-secure.fr/actualites/cybersecurite-pme-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/actualites/securite-cloud-guide</loc>
+    <loc>https://cloud-secure.fr/actualites/securite-cloud-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/actualites/audit-aws-guide</loc>
+    <loc>https://cloud-secure.fr/actualites/audit-aws-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/actualites/securite-azure-startups</loc>
+    <loc>https://cloud-secure.fr/actualites/securite-azure-startups</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/actualites/ia-cybersecurite-risques</loc>
+    <loc>https://cloud-secure.fr/actualites/ia-cybersecurite-risques</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/actualites/cout-audit-aws-2025</loc>
+    <loc>https://cloud-secure.fr/actualites/cout-audit-aws-2025</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/actualites/aws-vs-azure-securite</loc>
+    <loc>https://cloud-secure.fr/actualites/aws-vs-azure-securite</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/actualites/erreurs-securite-cloud</loc>
+    <loc>https://cloud-secure.fr/actualites/erreurs-securite-cloud</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/actualites/securiser-donnees-google-cloud</loc>
+    <loc>https://cloud-secure.fr/actualites/securiser-donnees-google-cloud</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/actualites/ia-generative-risques-securite</loc>
+    <loc>https://cloud-secure.fr/actualites/ia-generative-risques-securite</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/actualites/audit-securite-cloud-debut</loc>
+    <loc>https://cloud-secure.fr/actualites/audit-securite-cloud-debut</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://secure-sparkle-99.lovable.app/actualites/zero-trust-architecture-guide</loc>
+    <loc>https://cloud-secure.fr/actualites/zero-trust-architecture-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/soc2-compliance-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/securite-kubernetes-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/conformite-dora-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

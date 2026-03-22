@@ -10,7 +10,7 @@ interface SEOHeadProps {
   articleCategory?: string;
 }
 
-const SITE_URL = "https://secure-sparkle-99.lovable.app";
+const SITE_URL = "https://cloud-secure.fr";
 
 const SEOHead = ({ title, description, canonical, type = "website", articleDate, articleCategory }: SEOHeadProps) => {
   const location = useLocation();
