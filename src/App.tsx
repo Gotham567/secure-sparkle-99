@@ -58,6 +58,9 @@ const App = () => (
           <Route path="/actualites/soc2-compliance-guide" element={<Soc2ComplianceGuide />} />
           <Route path="/actualites/securite-kubernetes-guide" element={<SecuriteKubernetesGuide />} />
           <Route path="/actualites/conformite-dora-guide" element={<ConformiteDoraGuide />} />
+          <Route path="/actualites/conformite-nis2-guide" element={<ConformiteNis2Guide />} />
+          <Route path="/actualites/devsecops-guide" element={<DevsecopsGuide />} />
+          <Route path="/actualites/rgpd-securite-cloud-guide" element={<RgpdSecuriteCloudGuide />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/tarifs" element={<Tarifs />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
