@@ -16,6 +16,33 @@ interface Article {
 
 const articles: Article[] = [
   {
+    title: "Directive NIS2 : guide complet de mise en conformité pour les entreprises",
+    description: "Tout savoir sur la directive européenne NIS2 : périmètre élargi, obligations de cybersécurité, sanctions, calendrier et plan d'action concret pour vous mettre en conformité.",
+    slug: "conformite-nis2-guide",
+    date: "25 mars 2026",
+    readTime: "18 min",
+    category: "Conformité",
+    isPillar: true,
+  },
+  {
+    title: "DevSecOps : intégrer la sécurité dans votre pipeline CI/CD",
+    description: "Guide complet DevSecOps : principes, outils, bonnes pratiques et stratégie pour intégrer la sécurité à chaque étape de votre cycle de développement logiciel.",
+    slug: "devsecops-guide",
+    date: "23 mars 2026",
+    readTime: "16 min",
+    category: "DevSecOps",
+    isPillar: true,
+  },
+  {
+    title: "RGPD et sécurité cloud : comment protéger les données personnelles",
+    description: "Guide pratique pour concilier hébergement cloud et conformité RGPD : localisation des données, chiffrement, droits des personnes, sous-traitance et audit de conformité.",
+    slug: "rgpd-securite-cloud-guide",
+    date: "20 mars 2026",
+    readTime: "15 min",
+    category: "Conformité",
+    isPillar: true,
+  },
+  {
     title: "SOC 2 : guide complet pour les entreprises cloud en 2026",
     description: "Tout savoir sur la certification SOC 2 : types de rapports, critères TSC, processus d'audit et bonnes pratiques pour réussir votre mise en conformité.",
     slug: "soc2-compliance-guide",
