@@ -12,6 +12,7 @@ import Footer from "@/components/Footer";
 import TawkTo from "@/components/TawkTo";
 import SEOHead from "@/components/SEOHead";
 import FloatingCTA from "@/components/FloatingCTA";
+import FreeAuditBanner from "@/components/FreeAuditBanner";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
       <Navbar />
       <FloatingCTA />
       <HeroSection />
+      <FreeAuditBanner />
       <ServicesSection />
       <TrustSection />
       <AlgoLightHouseSection />
