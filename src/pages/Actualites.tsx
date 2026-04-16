@@ -16,6 +16,33 @@ interface Article {
 
 const articles: Article[] = [
   {
+    title: "ISO 27001 et cloud : guide complet de certification pour 2026",
+    description: "Tout savoir sur la norme ISO 27001 appliquée aux environnements cloud : exigences, SMSI, annexe A, processus de certification, coûts et plan d'action concret.",
+    slug: "iso-27001-cloud-guide",
+    date: "28 mars 2026",
+    readTime: "19 min",
+    category: "Conformité",
+    isPillar: true,
+  },
+  {
+    title: "Plan de réponse aux incidents cybersécurité : guide complet 2026",
+    description: "Construisez un plan de réponse aux incidents efficace : phases NIST, équipe CSIRT, playbooks ransomware, communication de crise et exercices de simulation.",
+    slug: "reponse-incidents-cybersecurite-guide",
+    date: "27 mars 2026",
+    readTime: "17 min",
+    category: "Gestion de crise",
+    isPillar: true,
+  },
+  {
+    title: "Sécurité multi-cloud : stratégie et bonnes pratiques 2026",
+    description: "Guide complet pour sécuriser une infrastructure multi-cloud : gouvernance unifiée, IAM fédéré, CSPM, chiffrement, monitoring transverse et conformité.",
+    slug: "securite-multi-cloud-guide",
+    date: "26 mars 2026",
+    readTime: "18 min",
+    category: "Sécurité Cloud",
+    isPillar: true,
+  },
+  {
     title: "Directive NIS2 : guide complet de mise en conformité pour les entreprises",
     description: "Tout savoir sur la directive européenne NIS2 : périmètre élargi, obligations de cybersécurité, sanctions, calendrier et plan d'action concret pour vous mettre en conformité.",
     slug: "conformite-nis2-guide",
