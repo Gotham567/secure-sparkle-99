@@ -16,6 +16,33 @@ interface Article {
 
 const articles: Article[] = [
   {
+    title: "Sécurité Serverless : guide AWS Lambda, Azure Functions et GCP 2026",
+    description: "Tout sur la sécurité des architectures serverless : OWASP Serverless Top 10, IAM, secrets, monitoring, supply chain et bonnes pratiques pour AWS Lambda, Azure Functions et Cloud Functions.",
+    slug: "securite-serverless-guide",
+    date: "2 avril 2026",
+    readTime: "18 min",
+    category: "Sécurité Cloud",
+    isPillar: true,
+  },
+  {
+    title: "Gestion des secrets en entreprise : HashiCorp Vault et alternatives 2026",
+    description: "Guide complet sur la gestion des secrets : HashiCorp Vault, AWS Secrets Manager, Azure Key Vault, GCP Secret Manager. Architecture, rotation, audit et bonnes pratiques DevSecOps.",
+    slug: "gestion-secrets-vault-guide",
+    date: "1 avril 2026",
+    readTime: "17 min",
+    category: "DevSecOps",
+    isPillar: true,
+  },
+  {
+    title: "CASB et sécurité SaaS : maîtriser le Shadow IT en 2026",
+    description: "Tout sur les Cloud Access Security Brokers : fonctions, déploiement, comparatif Microsoft Defender for Cloud Apps, Netskope, Zscaler. Sécurisation Microsoft 365, Google Workspace, Salesforce.",
+    slug: "casb-securite-saas-guide",
+    date: "31 mars 2026",
+    readTime: "16 min",
+    category: "Sécurité Cloud",
+    isPillar: true,
+  },
+  {
     title: "ISO 27001 et cloud : guide complet de certification pour 2026",
     description: "Tout savoir sur la norme ISO 27001 appliquée aux environnements cloud : exigences, SMSI, annexe A, processus de certification, coûts et plan d'action concret.",
     slug: "iso-27001-cloud-guide",
