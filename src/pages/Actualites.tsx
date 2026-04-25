@@ -16,6 +16,33 @@ interface Article {
 
 const articles: Article[] = [
   {
+    title: "Sécurité des API REST : guide OWASP API Top 10 pour 2026",
+    description: "Guide complet pour sécuriser vos API REST et GraphQL : OWASP API Security Top 10 2023, OAuth2/JWT, rate limiting, gestion des autorisations, monitoring et bonnes pratiques DevSecOps.",
+    slug: "securite-api-owasp-guide",
+    date: "5 avril 2026",
+    readTime: "19 min",
+    category: "Sécurité Applicative",
+    isPillar: true,
+  },
+  {
+    title: "Protection contre les ransomwares en entreprise : guide complet 2026",
+    description: "Guide définitif anti-ransomware : prévention, détection, sauvegardes immuables, plan de réponse, paiement ou non, exemples LockBit, BlackCat, Cl0p. Méthodes éprouvées pour PME et ETI.",
+    slug: "protection-ransomware-entreprise-guide",
+    date: "4 avril 2026",
+    readTime: "20 min",
+    category: "Cybersécurité",
+    isPillar: true,
+  },
+  {
+    title: "EDR vs XDR : comparatif complet et guide de choix pour 2026",
+    description: "Comparatif détaillé EDR vs XDR : différences, fonctionnalités, vendors leaders (CrowdStrike, SentinelOne, Microsoft Defender, Palo Alto Cortex), prix, cas d'usage et critères de choix.",
+    slug: "edr-vs-xdr-comparatif-guide",
+    date: "3 avril 2026",
+    readTime: "18 min",
+    category: "Cybersécurité",
+    isPillar: true,
+  },
+  {
     title: "Sécurité Serverless : guide AWS Lambda, Azure Functions et GCP 2026",
     description: "Tout sur la sécurité des architectures serverless : OWASP Serverless Top 10, IAM, secrets, monitoring, supply chain et bonnes pratiques pour AWS Lambda, Azure Functions et Cloud Functions.",
     slug: "securite-serverless-guide",
