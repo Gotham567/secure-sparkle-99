@@ -33,6 +33,9 @@ import SecuriteMultiCloudGuide from "./pages/articles/SecuriteMultiCloudGuide.ts
 import SecuriteServerlessGuide from "./pages/articles/SecuriteServerlessGuide.tsx";
 import GestionSecretsVaultGuide from "./pages/articles/GestionSecretsVaultGuide.tsx";
 import CasbSecuriteSaasGuide from "./pages/articles/CasbSecuriteSaasGuide.tsx";
+import SecuriteApiOwaspGuide from "./pages/articles/SecuriteApiOwaspGuide.tsx";
+import RansomwareProtectionGuide from "./pages/articles/RansomwareProtectionGuide.tsx";
+import EdrXdrComparatifGuide from "./pages/articles/EdrXdrComparatifGuide.tsx";
 import FAQ from "./pages/FAQ.tsx";
 import Tarifs from "./pages/Tarifs.tsx";
 const queryClient = new QueryClient();
@@ -73,6 +76,9 @@ const App = () => (
           <Route path="/actualites/securite-serverless-guide" element={<SecuriteServerlessGuide />} />
           <Route path="/actualites/gestion-secrets-vault-guide" element={<GestionSecretsVaultGuide />} />
           <Route path="/actualites/casb-securite-saas-guide" element={<CasbSecuriteSaasGuide />} />
+          <Route path="/actualites/securite-api-owasp-guide" element={<SecuriteApiOwaspGuide />} />
+          <Route path="/actualites/protection-ransomware-entreprise-guide" element={<RansomwareProtectionGuide />} />
+          <Route path="/actualites/edr-vs-xdr-comparatif-guide" element={<EdrXdrComparatifGuide />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/tarifs" element={<Tarifs />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
