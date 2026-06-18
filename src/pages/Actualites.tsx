@@ -16,6 +16,33 @@ interface Article {
 
 const articles: Article[] = [
   {
+    title: "SOC et SIEM managés : guide complet de la détection 24/7 pour 2026",
+    description: "Tout sur le SOC managé (MSSP, MDR) et le SIEM : fonctionnement, comparatif Splunk, Sentinel, QRadar, Elastic, Chronicle, prix, ROI et critères de choix pour PME et ETI.",
+    slug: "soc-siem-manage-guide",
+    date: "8 avril 2026",
+    readTime: "20 min",
+    category: "Cybersécurité",
+    isPillar: true,
+  },
+  {
+    title: "MFA et IAM dans le cloud : guide complet de la sécurité des identités 2026",
+    description: "Guide expert sur le MFA et l'IAM cloud : FIDO2/passkeys, SSO, gestion des accès AWS/Azure/GCP, PAM, Zero Standing Privilege, comparatif Okta, Entra ID, Ping et bonnes pratiques.",
+    slug: "mfa-iam-cloud-guide",
+    date: "7 avril 2026",
+    readTime: "19 min",
+    category: "Sécurité Cloud",
+    isPillar: true,
+  },
+  {
+    title: "Sécurité email et anti-phishing : guide complet pour les entreprises 2026",
+    description: "Guide expert anti-phishing : SPF, DKIM, DMARC, BIMI, MTA-STS, protection contre le BEC, AiTM et QR phishing. Comparatif Proofpoint, Mimecast, Microsoft Defender et bonnes pratiques.",
+    slug: "phishing-email-securite-guide",
+    date: "6 avril 2026",
+    readTime: "18 min",
+    category: "Cybersécurité",
+    isPillar: true,
+  },
+  {
     title: "Sécurité des API REST : guide OWASP API Top 10 pour 2026",
     description: "Guide complet pour sécuriser vos API REST et GraphQL : OWASP API Security Top 10 2023, OAuth2/JWT, rate limiting, gestion des autorisations, monitoring et bonnes pratiques DevSecOps.",
     slug: "securite-api-owasp-guide",
