@@ -82,6 +82,9 @@ const App = () => (
           <Route path="/actualites/securite-api-owasp-guide" element={<SecuriteApiOwaspGuide />} />
           <Route path="/actualites/protection-ransomware-entreprise-guide" element={<RansomwareProtectionGuide />} />
           <Route path="/actualites/edr-vs-xdr-comparatif-guide" element={<EdrXdrComparatifGuide />} />
+          <Route path="/actualites/soc-siem-manage-guide" element={<SocSiemManageGuide />} />
+          <Route path="/actualites/mfa-iam-cloud-guide" element={<MfaIamCloudGuide />} />
+          <Route path="/actualites/phishing-email-securite-guide" element={<PhishingEmailSecurityGuide />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/tarifs" element={<Tarifs />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
