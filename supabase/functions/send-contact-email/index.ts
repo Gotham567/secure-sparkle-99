@@ -12,6 +12,15 @@ interface ContactRequest {
   message?: string;
 }
 
+const escapeHtml = (str: string): string =>
+  str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;")
+    .replace(/\n/g, "<br>");
+
 serve(async (req) => {
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
@@ -27,19 +36,23 @@ serve(async (req) => {
 
     const { type, name, email, message }: ContactRequest = await req.json();
 
+    const safeName = escapeHtml(name ?? "");
+    const safeEmail = escapeHtml(email);
+    const safeMessage = escapeHtml(message ?? "");
+
     let subject: string;
     let htmlContent: string;
 
     if (type === "contact") {
-      subject = `[CloudSecure] Nouveau message de ${name}`;
+      subject = `[CloudSecure] Nouveau message de ${safeName}`;
       htmlContent = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
           <h2 style="color: #22c55e; border-bottom: 2px solid #22c55e; padding-bottom: 10px;">Nouveau message de contact</h2>
-          <p><strong>Nom :</strong> ${name}</p>
-          <p><strong>Email :</strong> ${email}</p>
+          <p><strong>Nom :</strong> ${safeName}</p>
+          <p><strong>Email :</strong> ${safeEmail}</p>
           <p><strong>Message :</strong></p>
           <div style="background: #f4f4f5; padding: 15px; border-radius: 8px; margin-top: 8px;">
-            ${message}
+            ${safeMessage}
           </div>
           <p style="color: #888; font-size: 12px; margin-top: 20px;">Envoyé depuis le site CloudSecure</p>
         </div>
@@ -49,7 +62,7 @@ serve(async (req) => {
       htmlContent = `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
           <h2 style="color: #22c55e; border-bottom: 2px solid #22c55e; padding-bottom: 10px;">Nouvel abonné à la newsletter</h2>
-          <p><strong>Email :</strong> ${email}</p>
+          <p><strong>Email :</strong> ${safeEmail}</p>
           <p style="color: #888; font-size: 12px; margin-top: 20px;">Envoyé depuis le site CloudSecure</p>
         </div>
       `;
