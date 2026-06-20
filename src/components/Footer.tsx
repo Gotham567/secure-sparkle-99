@@ -31,10 +31,10 @@ const Footer = () => {
               Cabinet expert en sécurité cloud, audit AWS & Azure. Qualifié PASSI & certifié ISO 27001.
             </p>
             <div className="flex gap-3">
-              <a href="https://www.linkedin.com/company/algosecure/" target="_blank" rel="noopener noreferrer" aria-label="CloudSecure sur LinkedIn" className="w-9 h-9 rounded-lg bg-muted/30 border border-border/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/30 transition-all">
+              <a href="https://www.linkedin.com/company/cloudsecure/" target="_blank" rel="noopener noreferrer" aria-label="CloudSecure sur LinkedIn" className="w-9 h-9 rounded-lg bg-muted/30 border border-border/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/30 transition-all">
                 <Linkedin className="h-4 w-4" aria-hidden="true" />
               </a>
-              <a href="https://twitter.com/AlgoSecure" target="_blank" rel="noopener noreferrer" aria-label="CloudSecure sur Twitter" className="w-9 h-9 rounded-lg bg-muted/30 border border-border/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/30 transition-all">
+              <a href="https://twitter.com/CloudSecureFr" target="_blank" rel="noopener noreferrer" aria-label="CloudSecure sur Twitter" className="w-9 h-9 rounded-lg bg-muted/30 border border-border/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/30 transition-all">
                 <Twitter className="h-4 w-4" aria-hidden="true" />
               </a>
             </div>
