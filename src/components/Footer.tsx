@@ -85,15 +85,39 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* City links */}
+        <div className="pt-8 pb-6 border-t border-border/30">
+          <p className="text-xs font-semibold text-foreground mb-3">Sécurité cloud par ville</p>
+          <nav aria-label="Villes desservies" className="flex flex-wrap gap-x-4 gap-y-2">
+            {[
+              ["Cloud Paris", "/securite-cloud-paris"],
+              ["Cloud Lyon", "/securite-cloud-lyon"],
+              ["Cloud Marseille", "/securite-cloud-marseille"],
+              ["Cloud Toulouse", "/securite-cloud-toulouse"],
+              ["Cloud Nantes", "/securite-cloud-nantes"],
+              ["Cloud Lille", "/securite-cloud-lille"],
+              ["Cloud Nice", "/securite-cloud-nice"],
+              ["Cloud Rennes", "/securite-cloud-rennes"],
+              ["Cloud Strasbourg", "/securite-cloud-strasbourg"],
+              ["Cloud Grenoble", "/securite-cloud-grenoble"],
+              ["Cloud Rouen", "/securite-cloud-rouen"],
+              ["Cloud Clermont-Ferrand", "/securite-cloud-clermont-ferrand"],
+            ].map(([label, href]) => (
+              <Link key={href} to={href} className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+                {label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+
         {/* Bottom bar */}
-        <div className="pt-8 border-t border-border/30 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="pt-6 border-t border-border/30 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
             © CloudSecure {new Date().getFullYear()}. Tous droits réservés.
           </p>
           <div className="flex flex-wrap items-center gap-6 text-xs text-muted-foreground">
-            <a href="#" className="hover:text-foreground transition-colors">Mentions légales</a>
-            <a href="#" className="hover:text-foreground transition-colors">Confidentialité</a>
-            <a href="#" className="hover:text-foreground transition-colors">RSE</a>
+            <Link to="/mentions-legales" className="hover:text-foreground transition-colors">Mentions légales</Link>
+            <Link to="/politique-confidentialite" className="hover:text-foreground transition-colors">Confidentialité</Link>
             <span className="hidden md:inline text-border/50">|</span>
             <a href="https://securecyber.fr" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">SecureCyber</a>
             <a href="https://cyberconform.fr" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">CyberConform</a>

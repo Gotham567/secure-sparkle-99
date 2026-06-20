@@ -54,6 +54,8 @@ import PhishingEmailSecurityGuide from "./pages/articles/PhishingEmailSecurityGu
 import FAQ from "./pages/FAQ.tsx";
 import Tarifs from "./pages/Tarifs.tsx";
 import Contact from "./pages/Contact.tsx";
+import MentionsLegales from "./pages/MentionsLegales.tsx";
+import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite.tsx";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -101,6 +103,8 @@ const App = () => (
           <Route path="/faq" element={<FAQ />} />
           <Route path="/tarifs" element={<Tarifs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
           {/* Cities */}
           <Route path="/securite-cloud-paris" element={<SecuriteCloudParis />} />
           <Route path="/securite-cloud-lyon" element={<SecuriteCloudLyon />} />
