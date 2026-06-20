@@ -1,4 +1,4 @@
-import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import { motion, useMotionValue, useTransform, animate, useInView } from "framer-motion";
 import { Search, ShieldCheck, Phone, Award, ArrowRight, ChevronDown, Shield, Lock, Server, Globe } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import { useEffect, useRef } from "react";
@@ -25,14 +25,16 @@ function AnimatedCounter({ target, suffix = "" }: { target: number; suffix?: str
   const count = useMotionValue(0);
   const rounded = useTransform(count, (v) => Math.round(v));
   const ref = useRef<HTMLSpanElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   useEffect(() => {
+    if (!isInView) return;
     const controls = animate(count, target, { duration: 2, ease: "easeOut" });
     const unsub = rounded.on("change", (v) => {
       if (ref.current) ref.current.textContent = v + suffix;
     });
     return () => { controls.stop(); unsub(); };
-  }, [target, suffix, count, rounded]);
+  }, [isInView, target, suffix, count, rounded]);
 
   return <span ref={ref}>0{suffix}</span>;
 }

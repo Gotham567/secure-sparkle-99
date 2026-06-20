@@ -5,24 +5,28 @@ const services = [
   {
     icon: Search,
     title: "Audit Cloud & IA",
+    tag: "01 — Audit",
     desc: "Audit de sécurité AWS, Azure et GCP. Tests d'intrusion cloud, revue d'architecture et analyse des configurations pour sécuriser vos environnements cloud.",
     features: ["Audit AWS & Azure", "Pentest Cloud", "Revue IAM & accès", "Sécurité Kubernetes"],
   },
   {
     icon: ShieldCheck,
     title: "Conseil & Conformité",
+    tag: "02 — Conseil",
     desc: "Accompagnement stratégique en sécurité cloud, conformité NIS2, RGPD et ISO 27001 pour startups et entreprises tech.",
     features: ["Conformité NIS2", "RSSI externalisé", "ISO 27001 Cloud", "Formation DevSecOps"],
   },
   {
     icon: Phone,
     title: "CERT & Incident Cloud",
+    tag: "03 — CERT",
     desc: "Réponse à incident sur environnements cloud. Analyse forensique AWS/Azure, gestion de crise et plan de reprise cloud.",
     features: ["Réponse incident cloud", "Forensique AWS/Azure", "Gestion de crise", "Plan de reprise"],
   },
   {
     icon: Award,
     title: "Certifications",
+    tag: "04 — Certifications",
     desc: "Nos certifications cloud et cybersécurité garantissent un haut niveau d'expertise sur AWS, Azure et les standards internationaux.",
     features: ["PASSI (ANSSI)", "ISO 27001:2022", "AWS Security", "Azure Expert"],
   },
@@ -65,8 +69,11 @@ const ServicesSection = () => {
 
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-6">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/15 to-accent/10 flex items-center justify-center group-hover:shadow-glow-sm transition-shadow duration-300">
-                    <service.icon className="h-7 w-7 text-primary" />
+                  <div className="flex items-center gap-3">
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/15 to-accent/10 flex items-center justify-center group-hover:shadow-glow-sm transition-shadow duration-300">
+                      <service.icon className="h-7 w-7 text-primary" />
+                    </div>
+                    <span className="text-xs font-mono font-semibold text-primary/60 tracking-widest uppercase">{service.tag}</span>
                   </div>
                   <ArrowUpRight className="h-5 w-5 text-muted-foreground/30 group-hover:text-primary transition-colors duration-300" />
                 </div>
@@ -82,7 +89,7 @@ const ServicesSection = () => {
                   {service.features.map((f) => (
                     <span
                       key={f}
-                      className="text-xs font-medium bg-muted/50 text-muted-foreground px-3 py-1.5 rounded-lg border border-border/50"
+                      className="text-xs font-medium bg-primary/8 text-primary/80 px-3 py-1.5 rounded-lg border border-primary/15 group-hover:border-primary/30 transition-colors"
                     >
                       {f}
                     </span>
