@@ -51,6 +51,11 @@ import EdrXdrComparatifGuide from "./pages/articles/EdrXdrComparatifGuide.tsx";
 import SocSiemManageGuide from "./pages/articles/SocSiemManageGuide.tsx";
 import MfaIamCloudGuide from "./pages/articles/MfaIamCloudGuide.tsx";
 import PhishingEmailSecurityGuide from "./pages/articles/PhishingEmailSecurityGuide.tsx";
+import SecuriteInfrastructureCode from "./pages/articles/SecuriteInfrastructureCode.tsx";
+import AwsWellArchitectedSecurite from "./pages/articles/AwsWellArchitectedSecurite.tsx";
+import SecuriteAzureEntraId from "./pages/articles/SecuriteAzureEntraId.tsx";
+import CspmGuide from "./pages/articles/CspmGuide.tsx";
+import PentestCloudGuide from "./pages/articles/PentestCloudGuide.tsx";
 import FAQ from "./pages/FAQ.tsx";
 import Tarifs from "./pages/Tarifs.tsx";
 import Contact from "./pages/Contact.tsx";
@@ -100,6 +105,11 @@ const App = () => (
           <Route path="/actualites/soc-siem-manage-guide" element={<SocSiemManageGuide />} />
           <Route path="/actualites/mfa-iam-cloud-guide" element={<MfaIamCloudGuide />} />
           <Route path="/actualites/phishing-email-securite-guide" element={<PhishingEmailSecurityGuide />} />
+          <Route path="/actualites/securite-infrastructure-as-code-terraform-guide" element={<SecuriteInfrastructureCode />} />
+          <Route path="/actualites/aws-well-architected-framework-securite" element={<AwsWellArchitectedSecurite />} />
+          <Route path="/actualites/securite-azure-active-directory" element={<SecuriteAzureEntraId />} />
+          <Route path="/actualites/cspm-cloud-security-posture-management-guide" element={<CspmGuide />} />
+          <Route path="/actualites/pentest-cloud-aws-azure-guide" element={<PentestCloudGuide />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/tarifs" element={<Tarifs />} />
           <Route path="/contact" element={<Contact />} />
