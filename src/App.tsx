@@ -5,6 +5,18 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import SecuriteCloudParis from "./pages/cities/SecuriteCloudParis.tsx";
+import SecuriteCloudLyon from "./pages/cities/SecuriteCloudLyon.tsx";
+import SecuriteCloudMarseille from "./pages/cities/SecuriteCloudMarseille.tsx";
+import SecuriteCloudToulouse from "./pages/cities/SecuriteCloudToulouse.tsx";
+import SecuriteCloudNantes from "./pages/cities/SecuriteCloudNantes.tsx";
+import SecuriteCloudLille from "./pages/cities/SecuriteCloudLille.tsx";
+import SecuriteCloudNice from "./pages/cities/SecuriteCloudNice.tsx";
+import SecuriteCloudRennes from "./pages/cities/SecuriteCloudRennes.tsx";
+import SecuriteCloudStrasbourg from "./pages/cities/SecuriteCloudStrasbourg.tsx";
+import SecuriteCloudGrenoble from "./pages/cities/SecuriteCloudGrenoble.tsx";
+import SecuriteCloudRouen from "./pages/cities/SecuriteCloudRouen.tsx";
+import SecuriteCloudClermontFerrand from "./pages/cities/SecuriteCloudClermontFerrand.tsx";
 import Actualites from "./pages/Actualites.tsx";
 import AuditCybersecuriteGuide from "./pages/articles/AuditCybersecuriteGuide.tsx";
 import PentestEntrepriseGuide from "./pages/articles/PentestEntrepriseGuide.tsx";
@@ -89,6 +101,19 @@ const App = () => (
           <Route path="/faq" element={<FAQ />} />
           <Route path="/tarifs" element={<Tarifs />} />
           <Route path="/contact" element={<Contact />} />
+          {/* Cities */}
+          <Route path="/securite-cloud-paris" element={<SecuriteCloudParis />} />
+          <Route path="/securite-cloud-lyon" element={<SecuriteCloudLyon />} />
+          <Route path="/securite-cloud-marseille" element={<SecuriteCloudMarseille />} />
+          <Route path="/securite-cloud-toulouse" element={<SecuriteCloudToulouse />} />
+          <Route path="/securite-cloud-nantes" element={<SecuriteCloudNantes />} />
+          <Route path="/securite-cloud-lille" element={<SecuriteCloudLille />} />
+          <Route path="/securite-cloud-nice" element={<SecuriteCloudNice />} />
+          <Route path="/securite-cloud-rennes" element={<SecuriteCloudRennes />} />
+          <Route path="/securite-cloud-strasbourg" element={<SecuriteCloudStrasbourg />} />
+          <Route path="/securite-cloud-grenoble" element={<SecuriteCloudGrenoble />} />
+          <Route path="/securite-cloud-rouen" element={<SecuriteCloudRouen />} />
+          <Route path="/securite-cloud-clermont-ferrand" element={<SecuriteCloudClermontFerrand />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
