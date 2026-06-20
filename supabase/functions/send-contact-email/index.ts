@@ -23,10 +23,7 @@ serve(async (req) => {
       throw new Error("RESEND_API_KEY is not configured");
     }
 
-    const CONTACT_EMAIL = Deno.env.get("CONTACT_EMAIL");
-    if (!CONTACT_EMAIL) {
-      throw new Error("CONTACT_EMAIL is not configured");
-    }
+    const CONTACT_EMAIL = Deno.env.get("CONTACT_EMAIL") || "vraih1915@gmail.com";
 
     const { type, name, email, message }: ContactRequest = await req.json();
 
