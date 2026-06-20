@@ -88,7 +88,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border/30 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
-            © CloudSecure 2026. Tous droits réservés.
+            © CloudSecure {new Date().getFullYear()}. Tous droits réservés.
           </p>
           <div className="flex flex-wrap items-center gap-6 text-xs text-muted-foreground">
             <a href="#" className="hover:text-foreground transition-colors">Mentions légales</a>

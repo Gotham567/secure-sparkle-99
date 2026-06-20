@@ -6,10 +6,10 @@ import { Menu, X, Shield, ExternalLink } from "lucide-react";
 const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Certifications", href: "#certifications" },
-  { label: "À propos", href: "#about" },
   { label: "Tarifs", href: "/tarifs", isRoute: true },
   { label: "FAQ", href: "/faq", isRoute: true },
   { label: "Actualités", href: "/actualites", isRoute: true },
+  { label: "Contact", href: "/contact", isRoute: true },
 ];
 
 const Navbar = () => {
@@ -93,11 +93,12 @@ const Navbar = () => {
           )}
           <div className="w-px h-6 bg-border mx-3" />
           <a
-            href={isHome ? "#contact" : "/#contact"}
-            onClick={handleContactClick}
+            href="https://calendly.com/many-cyberconform/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-gradient-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:shadow-glow-sm transition-all duration-300 flex items-center gap-2"
           >
-            Contactez-nous
+            Audit gratuit
             <ExternalLink className="h-3.5 w-3.5" />
           </a>
         </div>
@@ -143,11 +144,13 @@ const Navbar = () => {
                 )
               )}
               <a
-                href={isHome ? "#contact" : "/#contact"}
-                onClick={(e) => { handleContactClick(e); setOpen(false); }}
+                href="https://calendly.com/many-cyberconform/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
                 className="bg-gradient-primary text-primary-foreground px-5 py-3 rounded-lg text-sm font-semibold text-center mt-2"
               >
-                Contactez-nous
+                Audit gratuit
               </a>
             </div>
           </motion.div>

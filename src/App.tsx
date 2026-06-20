@@ -41,6 +41,7 @@ import MfaIamCloudGuide from "./pages/articles/MfaIamCloudGuide.tsx";
 import PhishingEmailSecurityGuide from "./pages/articles/PhishingEmailSecurityGuide.tsx";
 import FAQ from "./pages/FAQ.tsx";
 import Tarifs from "./pages/Tarifs.tsx";
+import Contact from "./pages/Contact.tsx";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -87,6 +88,7 @@ const App = () => (
           <Route path="/actualites/phishing-email-securite-guide" element={<PhishingEmailSecurityGuide />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/tarifs" element={<Tarifs />} />
+          <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

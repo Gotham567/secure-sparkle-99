@@ -12,6 +12,7 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import FloatingCTA from "@/components/FloatingCTA";
 import FreeAuditBanner from "@/components/FreeAuditBanner";
+import CookieConsent from "@/components/CookieConsent";
 
 const Index = () => {
   return (
@@ -33,6 +34,7 @@ const Index = () => {
       <ContactSection />
       <NewsletterSection />
       <Footer />
+      <CookieConsent />
     </div>
   );
 };
