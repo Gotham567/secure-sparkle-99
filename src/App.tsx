@@ -5,6 +5,36 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import SecuriteCloudToulon from "./pages/cities/SecuriteCloudToulon.tsx";
+import SecuriteCloudAixEnProvence from "./pages/cities/SecuriteCloudAixEnProvence.tsx";
+import SecuriteCloudBrest from "./pages/cities/SecuriteCloudBrest.tsx";
+import SecuriteCloudDijon from "./pages/cities/SecuriteCloudDijon.tsx";
+import SecuriteCloudAngers from "./pages/cities/SecuriteCloudAngers.tsx";
+import SecuriteCloudSaintEtienne from "./pages/cities/SecuriteCloudSaintEtienne.tsx";
+import SecuriteCloudLeMans from "./pages/cities/SecuriteCloudLeMans.tsx";
+import SecuriteCloudAmiens from "./pages/cities/SecuriteCloudAmiens.tsx";
+import SecuriteCloudTours from "./pages/cities/SecuriteCloudTours.tsx";
+import SecuriteCloudLimoges from "./pages/cities/SecuriteCloudLimoges.tsx";
+import SecuriteCloudMetz from "./pages/cities/SecuriteCloudMetz.tsx";
+import SecuriteCloudNancy from "./pages/cities/SecuriteCloudNancy.tsx";
+import SecuriteCloudCaen from "./pages/cities/SecuriteCloudCaen.tsx";
+import SecuriteCloudOrleans from "./pages/cities/SecuriteCloudOrleans.tsx";
+import SecuriteCloudReims from "./pages/cities/SecuriteCloudReims.tsx";
+import SecuriteCloudPau from "./pages/cities/SecuriteCloudPau.tsx";
+import SecuriteCloudPerpignan from "./pages/cities/SecuriteCloudPerpignan.tsx";
+import SecuriteCloudBesancon from "./pages/cities/SecuriteCloudBesancon.tsx";
+import SecuriteCloudAvignon from "./pages/cities/SecuriteCloudAvignon.tsx";
+import SecuriteCloudLaRochelle from "./pages/cities/SecuriteCloudLaRochelle.tsx";
+import SecuriteCloudNimes from "./pages/cities/SecuriteCloudNimes.tsx";
+import SecuriteCloudAnnecy from "./pages/cities/SecuriteCloudAnnecy.tsx";
+import SecuriteCloudColmar from "./pages/cities/SecuriteCloudColmar.tsx";
+import SecuriteCloudBordeaux from "./pages/cities/SecuriteCloudBordeaux.tsx";
+import SecuriteCloudMontpellier from "./pages/cities/SecuriteCloudMontpellier.tsx";
+import SecuriteCloudBayonne from "./pages/cities/SecuriteCloudBayonne.tsx";
+import SecuriteCloudValence from "./pages/cities/SecuriteCloudValence.tsx";
+import SecuriteCloudPoitiers from "./pages/cities/SecuriteCloudPoitiers.tsx";
+import SecuriteCloudDunkerque from "./pages/cities/SecuriteCloudDunkerque.tsx";
+import SecuriteCloudTroyes from "./pages/cities/SecuriteCloudTroyes.tsx";
 import SecuriteCloudParis from "./pages/cities/SecuriteCloudParis.tsx";
 import SecuriteCloudLyon from "./pages/cities/SecuriteCloudLyon.tsx";
 import SecuriteCloudMarseille from "./pages/cities/SecuriteCloudMarseille.tsx";
@@ -129,6 +159,36 @@ const App = () => (
           <Route path="/securite-cloud-rouen" element={<SecuriteCloudRouen />} />
           <Route path="/securite-cloud-clermont-ferrand" element={<SecuriteCloudClermontFerrand />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                    <Route path="/securite-cloud-toulon" element={<SecuriteCloudToulon />} />
+          <Route path="/securite-cloud-aix-en-provence" element={<SecuriteCloudAixEnProvence />} />
+          <Route path="/securite-cloud-brest" element={<SecuriteCloudBrest />} />
+          <Route path="/securite-cloud-dijon" element={<SecuriteCloudDijon />} />
+          <Route path="/securite-cloud-angers" element={<SecuriteCloudAngers />} />
+          <Route path="/securite-cloud-saint-etienne" element={<SecuriteCloudSaintEtienne />} />
+          <Route path="/securite-cloud-le-mans" element={<SecuriteCloudLeMans />} />
+          <Route path="/securite-cloud-amiens" element={<SecuriteCloudAmiens />} />
+          <Route path="/securite-cloud-tours" element={<SecuriteCloudTours />} />
+          <Route path="/securite-cloud-limoges" element={<SecuriteCloudLimoges />} />
+          <Route path="/securite-cloud-metz" element={<SecuriteCloudMetz />} />
+          <Route path="/securite-cloud-nancy" element={<SecuriteCloudNancy />} />
+          <Route path="/securite-cloud-caen" element={<SecuriteCloudCaen />} />
+          <Route path="/securite-cloud-orleans" element={<SecuriteCloudOrleans />} />
+          <Route path="/securite-cloud-reims" element={<SecuriteCloudReims />} />
+          <Route path="/securite-cloud-pau" element={<SecuriteCloudPau />} />
+          <Route path="/securite-cloud-perpignan" element={<SecuriteCloudPerpignan />} />
+          <Route path="/securite-cloud-besancon" element={<SecuriteCloudBesancon />} />
+          <Route path="/securite-cloud-avignon" element={<SecuriteCloudAvignon />} />
+          <Route path="/securite-cloud-la-rochelle" element={<SecuriteCloudLaRochelle />} />
+          <Route path="/securite-cloud-nimes" element={<SecuriteCloudNimes />} />
+          <Route path="/securite-cloud-annecy" element={<SecuriteCloudAnnecy />} />
+          <Route path="/securite-cloud-colmar" element={<SecuriteCloudColmar />} />
+          <Route path="/securite-cloud-bordeaux" element={<SecuriteCloudBordeaux />} />
+          <Route path="/securite-cloud-montpellier" element={<SecuriteCloudMontpellier />} />
+          <Route path="/securite-cloud-bayonne" element={<SecuriteCloudBayonne />} />
+          <Route path="/securite-cloud-valence" element={<SecuriteCloudValence />} />
+          <Route path="/securite-cloud-poitiers" element={<SecuriteCloudPoitiers />} />
+          <Route path="/securite-cloud-dunkerque" element={<SecuriteCloudDunkerque />} />
+          <Route path="/securite-cloud-troyes" element={<SecuriteCloudTroyes />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
