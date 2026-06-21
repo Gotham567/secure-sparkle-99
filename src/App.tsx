@@ -5,6 +5,22 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import SecuriteCloudBruxelles from "./pages/cities/SecuriteCloudBruxelles.tsx";
+import SecuriteCloudLiege from "./pages/cities/SecuriteCloudLiege.tsx";
+import SecuriteCloudNamur from "./pages/cities/SecuriteCloudNamur.tsx";
+import SecuriteCloudCharleroi from "./pages/cities/SecuriteCloudCharleroi.tsx";
+import SecuriteCloudMons from "./pages/cities/SecuriteCloudMons.tsx";
+import SecuriteCloudGeneve from "./pages/cities/SecuriteCloudGeneve.tsx";
+import SecuriteCloudLausanne from "./pages/cities/SecuriteCloudLausanne.tsx";
+import SecuriteCloudFribourg from "./pages/cities/SecuriteCloudFribourg.tsx";
+import SecuriteCloudNeuchatel from "./pages/cities/SecuriteCloudNeuchatel.tsx";
+import SecuriteCloudLuxembourg from "./pages/cities/SecuriteCloudLuxembourg.tsx";
+import SecuriteCloudEschSurAlzette from "./pages/cities/SecuriteCloudEschSurAlzette.tsx";
+import SecuriteCloudMontreal from "./pages/cities/SecuriteCloudMontreal.tsx";
+import SecuriteCloudQuebec from "./pages/cities/SecuriteCloudQuebec.tsx";
+import SecuriteCloudGatineau from "./pages/cities/SecuriteCloudGatineau.tsx";
+import SecuriteCloudSherbrooke from "./pages/cities/SecuriteCloudSherbrooke.tsx";
+import SecuriteCloudMonaco from "./pages/cities/SecuriteCloudMonaco.tsx";
 import SecuriteCloudMulhouse from "./pages/cities/SecuriteCloudMulhouse.tsx";
 import SecuriteCloudChambery from "./pages/cities/SecuriteCloudChambery.tsx";
 import SecuriteCloudNiort from "./pages/cities/SecuriteCloudNiort.tsx";
@@ -257,6 +273,22 @@ const App = () => (
           <Route path="/securite-cloud-versailles" element={<SecuriteCloudVersailles />} />
           <Route path="/securite-cloud-creteil" element={<SecuriteCloudCreteil />} />
           <Route path="/securite-cloud-nanterre" element={<SecuriteCloudNanterre />} />
+                    <Route path="/securite-cloud-bruxelles" element={<SecuriteCloudBruxelles />} />
+          <Route path="/securite-cloud-liege" element={<SecuriteCloudLiege />} />
+          <Route path="/securite-cloud-namur" element={<SecuriteCloudNamur />} />
+          <Route path="/securite-cloud-charleroi" element={<SecuriteCloudCharleroi />} />
+          <Route path="/securite-cloud-mons" element={<SecuriteCloudMons />} />
+          <Route path="/securite-cloud-geneve" element={<SecuriteCloudGeneve />} />
+          <Route path="/securite-cloud-lausanne" element={<SecuriteCloudLausanne />} />
+          <Route path="/securite-cloud-fribourg" element={<SecuriteCloudFribourg />} />
+          <Route path="/securite-cloud-neuchatel" element={<SecuriteCloudNeuchatel />} />
+          <Route path="/securite-cloud-luxembourg" element={<SecuriteCloudLuxembourg />} />
+          <Route path="/securite-cloud-esch-sur-alzette" element={<SecuriteCloudEschSurAlzette />} />
+          <Route path="/securite-cloud-montreal" element={<SecuriteCloudMontreal />} />
+          <Route path="/securite-cloud-quebec" element={<SecuriteCloudQuebec />} />
+          <Route path="/securite-cloud-gatineau" element={<SecuriteCloudGatineau />} />
+          <Route path="/securite-cloud-sherbrooke" element={<SecuriteCloudSherbrooke />} />
+          <Route path="/securite-cloud-monaco" element={<SecuriteCloudMonaco />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
