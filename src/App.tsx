@@ -136,6 +136,13 @@ import AwsWellArchitectedSecurite from "./pages/articles/AwsWellArchitectedSecur
 import SecuriteAzureEntraId from "./pages/articles/SecuriteAzureEntraId.tsx";
 import CspmGuide from "./pages/articles/CspmGuide.tsx";
 import PentestCloudGuide from "./pages/articles/PentestCloudGuide.tsx";
+import CoutCyberattaqueEntreprise from "./pages/articles/CoutCyberattaqueEntreprise.tsx";
+import PatchManagementSecurity from "./pages/articles/PatchManagementSecurity.tsx";
+import SecuriteDockerConteneurs from "./pages/articles/SecuriteDockerConteneurs.tsx";
+import ThreatModelingSTRIDE from "./pages/articles/ThreatModelingSTRIDE.tsx";
+import RansomwareAsService from "./pages/articles/RansomwareAsService.tsx";
+import SbomSupplyChainSecurity from "./pages/articles/SbomSupplyChainSecurity.tsx";
+import SecuriteActiveDirectoryEntreprise from "./pages/articles/SecuriteActiveDirectoryEntreprise.tsx";
 import FAQ from "./pages/FAQ.tsx";
 import Tarifs from "./pages/Tarifs.tsx";
 import Contact from "./pages/Contact.tsx";
@@ -190,6 +197,13 @@ const App = () => (
           <Route path="/actualites/securite-azure-active-directory" element={<SecuriteAzureEntraId />} />
           <Route path="/actualites/cspm-cloud-security-posture-management-guide" element={<CspmGuide />} />
           <Route path="/actualites/pentest-cloud-aws-azure-guide" element={<PentestCloudGuide />} />
+          <Route path="/actualites/cout-cyberattaque-entreprise-2026" element={<CoutCyberattaqueEntreprise />} />
+          <Route path="/actualites/patch-management-cvss-nis2" element={<PatchManagementSecurity />} />
+          <Route path="/actualites/securite-docker-conteneurs-guide" element={<SecuriteDockerConteneurs />} />
+          <Route path="/actualites/threat-modeling-stride-guide" element={<ThreatModelingSTRIDE />} />
+          <Route path="/actualites/ransomware-as-a-service-protection-2026" element={<RansomwareAsService />} />
+          <Route path="/actualites/sbom-supply-chain-securite-logicielle" element={<SbomSupplyChainSecurity />} />
+          <Route path="/actualites/securite-active-directory-enterprise-guide" element={<SecuriteActiveDirectoryEntreprise />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/tarifs" element={<Tarifs />} />
           <Route path="/contact" element={<Contact />} />
