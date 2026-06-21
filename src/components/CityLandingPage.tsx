@@ -93,6 +93,13 @@ const CityLandingPage = ({ data }: Props) => {
         <meta property="og:url" content={url} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="fr_FR" />
+        <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9788b1a0-488a-4642-9aa3-61a4f2faeedc/id-preview-57d65fc8--ac5cac8d-0c20-497c-96b5-7d97436bd2b7.lovable.app-1773502129598.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9788b1a0-488a-4642-9aa3-61a4f2faeedc/id-preview-57d65fc8--ac5cac8d-0c20-497c-96b5-7d97436bd2b7.lovable.app-1773502129598.png" />
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
