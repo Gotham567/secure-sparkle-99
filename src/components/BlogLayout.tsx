@@ -13,6 +13,22 @@ interface BlogLayoutProps {
   children: React.ReactNode;
 }
 
+const FRENCH_MONTHS: Record<string, string> = {
+  janvier: "01", février: "02", mars: "03", avril: "04",
+  mai: "05", juin: "06", juillet: "07", août: "08",
+  septembre: "09", octobre: "10", novembre: "11", décembre: "12",
+};
+
+const toISODate = (frenchDate: string): string => {
+  const parts = frenchDate.trim().split(/\s+/);
+  if (parts.length === 3) {
+    const [day, month, year] = parts;
+    const m = FRENCH_MONTHS[month.toLowerCase()];
+    if (m) return `${year}-${m}-${day.padStart(2, "0")}`;
+  }
+  return frenchDate;
+};
+
 const BlogLayout = ({ title, description, date, readTime, category, children }: BlogLayoutProps) => {
   return (
     <div className="min-h-screen bg-background">
@@ -20,7 +36,7 @@ const BlogLayout = ({ title, description, date, readTime, category, children }: 
         title={title}
         description={description}
         type="article"
-        articleDate={date}
+        articleDate={toISODate(date)}
         articleCategory={category}
       />
       <Navbar />
