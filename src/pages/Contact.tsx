@@ -81,7 +81,7 @@ const Contact = () => {
             >
               {[
                 { icon: Mail, label: "Email", value: "contact@cloudsecure.fr", href: "mailto:contact@cloudsecure.fr" },
-                { icon: Phone, label: "Téléphone", value: "04 26 78 24 86", href: "tel:+33426782486" },
+                { icon: Phone, label: "Téléphone", value: "07 69 32 30 19", href: "tel:+33679323019" },
                 { icon: MapPin, label: "Implantations", value: "Lyon · Paris · Grenoble · Saint-Étienne", href: null },
                 { icon: Clock, label: "Disponibilité", value: "Lun-Ven 9h-18h · SOC 24/7", href: null },
               ].map(({ icon: Icon, label, value, href }) => (
