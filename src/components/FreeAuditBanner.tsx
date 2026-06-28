@@ -37,7 +37,7 @@ const FreeAuditBanner = () => {
           </p>
 
           <motion.a
-            href="https://calendly.com/many-cyberconform/30min"
+            href="https://calendly.com/lakaoub/30min"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.04 }}
