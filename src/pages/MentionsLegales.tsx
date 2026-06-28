@@ -25,7 +25,7 @@ const MentionsLegales = () => {
                     <li><strong className="text-foreground">Raison sociale :</strong> CloudSecure</li>
                     <li><strong className="text-foreground">Forme juridique :</strong> SAS (Société par Actions Simplifiée)</li>
                     <li><strong className="text-foreground">Siège social :</strong> 40 rue de Bruxelles, 69009 Lyon, France</li>
-                    <li><strong className="text-foreground">Téléphone :</strong> 04 26 78 24 86</li>
+                    <li><strong className="text-foreground">Téléphone :</strong> 07 69 32 30 19</li>
                     <li><strong className="text-foreground">Email :</strong> contact@cloudsecure.fr</li>
                     <li><strong className="text-foreground">Directeur de la publication :</strong> Le représentant légal de CloudSecure</li>
                   </ul>
