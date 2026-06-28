@@ -40,7 +40,7 @@ const CityLandingPage = ({ data }: Props) => {
     name: `CloudSecure ${data.city}`,
     description,
     url,
-    telephone: "+33426782486",
+    telephone: "+33679323019",
     email: "contact@cloudsecure.fr",
     areaServed: {
       "@type": "City",
@@ -135,10 +135,10 @@ const CityLandingPage = ({ data }: Props) => {
                   <ArrowRight className="h-4 w-4" />
                 </a>
                 <a
-                  href="tel:+33426782486"
+                  href="tel:+33679323019"
                   className="inline-flex items-center gap-2 rounded-md border border-border px-6 py-3 text-sm font-semibold text-foreground hover:border-primary/40 hover:bg-primary/5 transition-all min-h-[44px]"
                 >
-                  <Phone className="h-4 w-4" /> 04 26 78 24 86
+                  <Phone className="h-4 w-4" /> 07 69 32 30 19
                 </a>
               </div>
             </section>

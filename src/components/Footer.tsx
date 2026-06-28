@@ -75,7 +75,7 @@ const Footer = () => {
             <address className="space-y-3 not-italic">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-primary/70" aria-hidden="true" />
-                <a href="tel:+33426782486" className="hover:text-foreground transition-colors">04 26 78 24 86</a>
+                <a href="tel:+33679323019" className="hover:text-foreground transition-colors">07 69 32 30 19</a>
               </div>
               <div className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 text-primary/70 shrink-0 mt-0.5" aria-hidden="true" />
