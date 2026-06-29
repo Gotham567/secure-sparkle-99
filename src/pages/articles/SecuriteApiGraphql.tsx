@@ -41,7 +41,7 @@ const SecuriteApiGraphql = () => {
         <ul>
           <li>Même sans introspection, GraphQL peut révéler des champs sensibles via les suggestions. Désactiver les suggestions ou les masquer en production.</li>
           <li>Apollo Server : utiliser le plugin `@graphql-armor/remove-field-suggestion` ou configurer les options d'erreur pour masquer les suggestions</li>
-          <li>Tester avec des requêtes malformées intentionnellement : `{ passw }` → si la réponse contient "Did you mean: password?", les suggestions sont actives</li>
+          <li>Tester avec des requêtes malformées intentionnellement : {'`{ passw }`'} → si la réponse contient "Did you mean: password?", les suggestions sont actives</li>
         </ul>
       </section>
 
