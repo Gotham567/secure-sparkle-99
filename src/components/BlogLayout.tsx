@@ -10,6 +10,7 @@ interface BlogLayoutProps {
   date: string;
   readTime: string;
   category: string;
+  slug?: string;
   children: React.ReactNode;
 }
 

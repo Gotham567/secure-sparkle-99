@@ -17,7 +17,7 @@ const GithubActionsSecurite = () => {
         <h3>Les vecteurs d'attaque sur GitHub Actions</h3>
         <ul>
           <li><strong>Secrets exposés dans les logs :</strong> afficher accidentellement `echo $AWS_SECRET_KEY` dans les logs du workflow, visibles publiquement dans les repos publics</li>
-          <li><strong>Injection via `${{ github.event.pull_request.head.ref }}` :</strong> inputs non sanitisés dans les expressions GitHub permettant l'injection de commandes shell</li>
+          <li><strong>Injection via {'`${{ github.event.pull_request.head.ref }}`'} :</strong> inputs non sanitisés dans les expressions GitHub permettant l'injection de commandes shell</li>
           <li><strong>Actions tierces compromises :</strong> une action `uses: some-org/some-action@v2` exécute du code tiers avec accès à tous vos secrets et tokens</li>
           <li><strong>Permissions GITHUB_TOKEN excessives :</strong> le token GitHub par défaut peut avoir les droits d'écriture sur le repo, permettant l'injection de code malveillant</li>
           <li><strong>Workflow déclenchés par des PRs de forks :</strong> des contributeurs malveillants peuvent tenter d'exfiltrer des secrets via des workflows `pull_request`</li>
