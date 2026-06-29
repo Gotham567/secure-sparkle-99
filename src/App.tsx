@@ -61,6 +61,23 @@ const ThreatModelingSTRIDE = lazy(() => import("./pages/articles/ThreatModelingS
 const RansomwareAsService = lazy(() => import("./pages/articles/RansomwareAsService.tsx"));
 const SbomSupplyChainSecurity = lazy(() => import("./pages/articles/SbomSupplyChainSecurity.tsx"));
 const SecuriteActiveDirectoryEntreprise = lazy(() => import("./pages/articles/SecuriteActiveDirectoryEntreprise.tsx"));
+const BudgetSecuriteCloudStartup = lazy(() => import("./pages/articles/BudgetSecuriteCloudStartup.tsx"));
+const NotificationIncidentCloudNIS2 = lazy(() => import("./pages/articles/NotificationIncidentCloudNIS2.tsx"));
+const DoraConformiteCloud = lazy(() => import("./pages/articles/DoraConformiteCloud.tsx"));
+const NIS2CloudFournisseurs = lazy(() => import("./pages/articles/NIS2CloudFournisseurs.tsx"));
+const SecuriteApiCloudOwasp = lazy(() => import("./pages/articles/SecuriteApiCloudOwasp.tsx"));
+const SecuriteKubernetesCloud = lazy(() => import("./pages/articles/SecuriteKubernetesCloud.tsx"));
+const WafCloudSecurite = lazy(() => import("./pages/articles/WafCloudSecurite.tsx"));
+const SecuriteGoogleCloudGuide = lazy(() => import("./pages/articles/SecuriteGoogleCloudGuide.tsx"));
+const CloudSouverainFranceGuide = lazy(() => import("./pages/articles/CloudSouverainFranceGuide.tsx"));
+const AzureSentinelSiemGuide = lazy(() => import("./pages/articles/AzureSentinelSiemGuide.tsx"));
+const TerraformSecuriteIac = lazy(() => import("./pages/articles/TerraformSecuriteIac.tsx"));
+const GithubActionsSecurite = lazy(() => import("./pages/articles/GithubActionsSecurite.tsx"));
+const SecuriteConteneurDocker = lazy(() => import("./pages/articles/SecuriteConteneurDocker.tsx"));
+const KubernetesRbacDurcissement = lazy(() => import("./pages/articles/KubernetesRbacDurcissement.tsx"));
+const SecuriteApiGraphql = lazy(() => import("./pages/articles/SecuriteApiGraphql.tsx"));
+const CnappSecuriteCloudNative = lazy(() => import("./pages/articles/CnappSecuriteCloudNative.tsx"));
+const AiSecuriteOwasp = lazy(() => import("./pages/articles/AiSecuriteOwasp.tsx"));
 
 // Cities
 const SecuriteCloudParis = lazy(() => import("./pages/cities/SecuriteCloudParis.tsx"));
@@ -155,6 +172,44 @@ const SecuriteCloudQuebec = lazy(() => import("./pages/cities/SecuriteCloudQuebe
 const SecuriteCloudGatineau = lazy(() => import("./pages/cities/SecuriteCloudGatineau.tsx"));
 const SecuriteCloudSherbrooke = lazy(() => import("./pages/cities/SecuriteCloudSherbrooke.tsx"));
 const SecuriteCloudMonaco = lazy(() => import("./pages/cities/SecuriteCloudMonaco.tsx"));
+const SecuriteCloudBethune = lazy(() => import("./pages/cities/SecuriteCloudBethune.tsx"));
+const SecuriteCloudLens = lazy(() => import("./pages/cities/SecuriteCloudLens.tsx"));
+const SecuriteCloudHautsDeFrance = lazy(() => import("./pages/cities/SecuriteCloudHautsDeFrance.tsx"));
+const SecuriteCloudIleDeFrance = lazy(() => import("./pages/cities/SecuriteCloudIleDeFrance.tsx"));
+const SecuriteCloudOccitanie = lazy(() => import("./pages/cities/SecuriteCloudOccitanie.tsx"));
+const SecuriteCloudBretagne = lazy(() => import("./pages/cities/SecuriteCloudBretagne.tsx"));
+const SecuriteCloudNormandie = lazy(() => import("./pages/cities/SecuriteCloudNormandie.tsx"));
+const SecuriteCloudNouvelleAquitaine = lazy(() => import("./pages/cities/SecuriteCloudNouvelleAquitaine.tsx"));
+const SecuriteCloudGrandEst = lazy(() => import("./pages/cities/SecuriteCloudGrandEst.tsx"));
+const SecuriteCloudAuvergneRhoneAlpes = lazy(() => import("./pages/cities/SecuriteCloudAuvergneRhoneAlpes.tsx"));
+const SecuriteCloudPaca = lazy(() => import("./pages/cities/SecuriteCloudPaca.tsx"));
+const SecuriteCloudPaysDeLaLoire = lazy(() => import("./pages/cities/SecuriteCloudPaysDeLaLoire.tsx"));
+const SecuriteCloudCentreValDeLoire = lazy(() => import("./pages/cities/SecuriteCloudCentreValDeLoire.tsx"));
+const SecuriteCloudBourgogneFrancheComte = lazy(() => import("./pages/cities/SecuriteCloudBourgogneFrancheComte.tsx"));
+const SecuriteCloudGironde = lazy(() => import("./pages/cities/SecuriteCloudGironde.tsx"));
+const SecuriteCloudIlleEtVilaine = lazy(() => import("./pages/cities/SecuriteCloudIlleEtVilaine.tsx"));
+const SecuriteCloudRhone = lazy(() => import("./pages/cities/SecuriteCloudRhone.tsx"));
+const SecuriteCloudNord = lazy(() => import("./pages/cities/SecuriteCloudNord.tsx"));
+const SecuriteCloudHerault = lazy(() => import("./pages/cities/SecuriteCloudHerault.tsx"));
+const SecuriteCloudIsere = lazy(() => import("./pages/cities/SecuriteCloudIsere.tsx"));
+const SecuriteCloudHauteGaronne = lazy(() => import("./pages/cities/SecuriteCloudHauteGaronne.tsx"));
+const SecuriteCloudBouchesduRhone = lazy(() => import("./pages/cities/SecuriteCloudBouchesduRhone.tsx"));
+const SecuriteCloudLoireAtlantique = lazy(() => import("./pages/cities/SecuriteCloudLoireAtlantique.tsx"));
+const SecuriteCloudMoselle = lazy(() => import("./pages/cities/SecuriteCloudMoselle.tsx"));
+const SecuriteCloudSeineMaritime = lazy(() => import("./pages/cities/SecuriteCloudSeineMaritime.tsx"));
+const SecuriteCloudBasRhin = lazy(() => import("./pages/cities/SecuriteCloudBasRhin.tsx"));
+const SecuriteCloudAlpesMaritimes = lazy(() => import("./pages/cities/SecuriteCloudAlpesMaritimes.tsx"));
+const SecuriteCloudVar = lazy(() => import("./pages/cities/SecuriteCloudVar.tsx"));
+const SecuriteCloudFinistere = lazy(() => import("./pages/cities/SecuriteCloudFinistere.tsx"));
+const SecuriteCloudPuyDeDome = lazy(() => import("./pages/cities/SecuriteCloudPuyDeDome.tsx"));
+const SecuriteCloudDoubs = lazy(() => import("./pages/cities/SecuriteCloudDoubs.tsx"));
+const SecuriteCloudMeurtheEtMoselle = lazy(() => import("./pages/cities/SecuriteCloudMeurtheEtMoselle.tsx"));
+const SecuriteCloudMaineEtLoire = lazy(() => import("./pages/cities/SecuriteCloudMaineEtLoire.tsx"));
+const SecuriteCloudYvelines = lazy(() => import("./pages/cities/SecuriteCloudYvelines.tsx"));
+const SecuriteCloudVendee = lazy(() => import("./pages/cities/SecuriteCloudVendee.tsx"));
+const SecuriteCloudHautRhin = lazy(() => import("./pages/cities/SecuriteCloudHautRhin.tsx"));
+const SecuriteCloudPasDeCalais = lazy(() => import("./pages/cities/SecuriteCloudPasDeCalais.tsx"));
+const SecuriteCloudCoteDor = lazy(() => import("./pages/cities/SecuriteCloudCoteDor.tsx"));
 
 const queryClient = new QueryClient();
 
@@ -213,6 +268,23 @@ const App = () => (
             <Route path="/actualites/ransomware-as-a-service-protection-2026" element={<RansomwareAsService />} />
             <Route path="/actualites/sbom-supply-chain-securite-logicielle" element={<SbomSupplyChainSecurity />} />
             <Route path="/actualites/securite-active-directory-enterprise-guide" element={<SecuriteActiveDirectoryEntreprise />} />
+            <Route path="/actualites/budget-securite-cloud-startup-pme-tech" element={<BudgetSecuriteCloudStartup />} />
+            <Route path="/actualites/notification-incident-cloud-nis2-cnil" element={<NotificationIncidentCloudNIS2 />} />
+            <Route path="/actualites/dora-conformite-cloud-entreprises-financieres" element={<DoraConformiteCloud />} />
+            <Route path="/actualites/nis2-cloud-fournisseurs-services-numeriques" element={<NIS2CloudFournisseurs />} />
+            <Route path="/actualites/securite-api-cloud-owasp-aws-azure-gcp" element={<SecuriteApiCloudOwasp />} />
+            <Route path="/actualites/securite-kubernetes-cloud-aws-azure-gcp" element={<SecuriteKubernetesCloud />} />
+            <Route path="/actualites/waf-cloud-aws-azure-gcp-comparatif" element={<WafCloudSecurite />} />
+            <Route path="/actualites/securite-google-cloud-platform-guide-pme" element={<SecuriteGoogleCloudGuide />} />
+            <Route path="/actualites/cloud-souverain-france-secnumcloud-guide" element={<CloudSouverainFranceGuide />} />
+            <Route path="/actualites/azure-sentinel-microsoft-defender-siem-guide" element={<AzureSentinelSiemGuide />} />
+            <Route path="/actualites/terraform-securite-iac-checkov-tfsec" element={<TerraformSecuriteIac />} />
+            <Route path="/actualites/github-actions-securite-oidc-supply-chain" element={<GithubActionsSecurite />} />
+            <Route path="/actualites/securite-conteneurs-docker-trivy-falco" element={<SecuriteConteneurDocker />} />
+            <Route path="/actualites/kubernetes-rbac-durcissement-cis-benchmark" element={<KubernetesRbacDurcissement />} />
+            <Route path="/actualites/securite-api-graphql-introspection-injections" element={<SecuriteApiGraphql />} />
+            <Route path="/actualites/cnapp-securite-cloud-native-cspm-cwpp-ciem" element={<CnappSecuriteCloudNative />} />
+            <Route path="/actualites/owasp-llm-top-10-securite-ia-generative" element={<AiSecuriteOwasp />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/tarifs" element={<Tarifs />} />
             <Route path="/contact" element={<Contact />} />
@@ -311,6 +383,44 @@ const App = () => (
             <Route path="/securite-cloud-gatineau" element={<SecuriteCloudGatineau />} />
             <Route path="/securite-cloud-sherbrooke" element={<SecuriteCloudSherbrooke />} />
             <Route path="/securite-cloud-monaco" element={<SecuriteCloudMonaco />} />
+            <Route path="/securite-cloud-bethune" element={<SecuriteCloudBethune />} />
+            <Route path="/securite-cloud-lens" element={<SecuriteCloudLens />} />
+            <Route path="/securite-cloud-hauts-de-france" element={<SecuriteCloudHautsDeFrance />} />
+            <Route path="/securite-cloud-ile-de-france" element={<SecuriteCloudIleDeFrance />} />
+            <Route path="/securite-cloud-occitanie" element={<SecuriteCloudOccitanie />} />
+            <Route path="/securite-cloud-bretagne" element={<SecuriteCloudBretagne />} />
+            <Route path="/securite-cloud-normandie" element={<SecuriteCloudNormandie />} />
+            <Route path="/securite-cloud-nouvelle-aquitaine" element={<SecuriteCloudNouvelleAquitaine />} />
+            <Route path="/securite-cloud-grand-est" element={<SecuriteCloudGrandEst />} />
+            <Route path="/securite-cloud-auvergne-rhone-alpes" element={<SecuriteCloudAuvergneRhoneAlpes />} />
+            <Route path="/securite-cloud-paca" element={<SecuriteCloudPaca />} />
+            <Route path="/securite-cloud-pays-de-la-loire" element={<SecuriteCloudPaysDeLaLoire />} />
+            <Route path="/securite-cloud-centre-val-de-loire" element={<SecuriteCloudCentreValDeLoire />} />
+            <Route path="/securite-cloud-bourgogne-franche-comte" element={<SecuriteCloudBourgogneFrancheComte />} />
+            <Route path="/securite-cloud-gironde" element={<SecuriteCloudGironde />} />
+            <Route path="/securite-cloud-ille-et-vilaine" element={<SecuriteCloudIlleEtVilaine />} />
+            <Route path="/securite-cloud-rhone" element={<SecuriteCloudRhone />} />
+            <Route path="/securite-cloud-nord" element={<SecuriteCloudNord />} />
+            <Route path="/securite-cloud-herault" element={<SecuriteCloudHerault />} />
+            <Route path="/securite-cloud-isere" element={<SecuriteCloudIsere />} />
+            <Route path="/securite-cloud-haute-garonne" element={<SecuriteCloudHauteGaronne />} />
+            <Route path="/securite-cloud-bouches-du-rhone" element={<SecuriteCloudBouchesduRhone />} />
+            <Route path="/securite-cloud-loire-atlantique" element={<SecuriteCloudLoireAtlantique />} />
+            <Route path="/securite-cloud-moselle" element={<SecuriteCloudMoselle />} />
+            <Route path="/securite-cloud-seine-maritime" element={<SecuriteCloudSeineMaritime />} />
+            <Route path="/securite-cloud-bas-rhin" element={<SecuriteCloudBasRhin />} />
+            <Route path="/securite-cloud-alpes-maritimes" element={<SecuriteCloudAlpesMaritimes />} />
+            <Route path="/securite-cloud-var" element={<SecuriteCloudVar />} />
+            <Route path="/securite-cloud-finistere" element={<SecuriteCloudFinistere />} />
+            <Route path="/securite-cloud-puy-de-dome" element={<SecuriteCloudPuyDeDome />} />
+            <Route path="/securite-cloud-doubs" element={<SecuriteCloudDoubs />} />
+            <Route path="/securite-cloud-meurthe-et-moselle" element={<SecuriteCloudMeurtheEtMoselle />} />
+            <Route path="/securite-cloud-maine-et-loire" element={<SecuriteCloudMaineEtLoire />} />
+            <Route path="/securite-cloud-yvelines" element={<SecuriteCloudYvelines />} />
+            <Route path="/securite-cloud-vendee" element={<SecuriteCloudVendee />} />
+            <Route path="/securite-cloud-haut-rhin" element={<SecuriteCloudHautRhin />} />
+            <Route path="/securite-cloud-pas-de-calais" element={<SecuriteCloudPasDeCalais />} />
+            <Route path="/securite-cloud-cote-dor" element={<SecuriteCloudCoteDor />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
