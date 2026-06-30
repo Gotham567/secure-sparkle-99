@@ -22,7 +22,7 @@ const FreeAuditBanner = () => {
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-display">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-heading">
             Audit cybersécurité gratuit de 15 minutes
           </h2>
 

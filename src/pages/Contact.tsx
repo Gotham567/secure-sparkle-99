@@ -4,6 +4,8 @@ import { ArrowRight, Mail, Phone, MapPin, Clock, Loader2, CheckCircle } from "lu
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "sonner";
 
 const serviceOptions = [
   "Audit AWS / Azure / GCP",
@@ -41,9 +43,41 @@ const Contact = () => {
     }
     setErrors({});
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 1200));
-    setLoading(false);
-    setSuccess(true);
+    try {
+      const { error: dbError } = await supabase
+        .from("contact_submissions")
+        .insert({
+          name: `${data.nom || ""} ${data.prenom || ""}`.trim(),
+          email: data.email,
+          message: `[${data.service || "Non précisé"}] ${data.societe ? `Société: ${data.societe} — ` : ""}${data.message}`,
+        });
+
+      if (dbError) throw dbError;
+
+      const { error: fnError } = await supabase.functions.invoke("send-contact-email", {
+        body: {
+          type: "contact",
+          name: `${data.nom || ""} ${data.prenom || ""}`.trim(),
+          email: data.email,
+          message: data.message,
+          societe: data.societe || "",
+          service: data.service || "",
+          telephone: data.telephone || "",
+        },
+      });
+
+      if (fnError) {
+        if (import.meta.env.DEV) console.error("Email notification failed:", fnError);
+      }
+
+      setSuccess(true);
+      toast.success("Message envoyé avec succès !");
+    } catch (err) {
+      if (import.meta.env.DEV) console.error(err);
+      toast.error("Erreur lors de l'envoi. Veuillez réessayer ou nous contacter par email.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

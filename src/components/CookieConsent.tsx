@@ -57,7 +57,7 @@ const CookieConsent = () => {
             <p className="text-xs text-muted-foreground leading-relaxed mb-5">
               Nous utilisons des cookies pour améliorer votre expérience et analyser notre trafic.
               Conformément au RGPD, votre consentement est requis pour les cookies non essentiels.{" "}
-              <a href="#" className="text-primary hover:underline">En savoir plus</a>
+              <a href="/politique-confidentialite" className="text-primary hover:underline">En savoir plus</a>
             </p>
             <div className="flex gap-3">
               <button
