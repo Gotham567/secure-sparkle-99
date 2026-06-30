@@ -122,20 +122,42 @@ const FAQ = () => {
   }, [activeCategory, search]);
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.id = "faq-jsonld";
-    script.textContent = JSON.stringify({
+    // FAQPage JSON-LD (toutes les questions, pas seulement filtrées)
+    const faqScript = document.createElement("script");
+    faqScript.type = "application/ld+json";
+    faqScript.id = "faq-jsonld";
+    faqScript.textContent = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      "name": "FAQ – Questions fréquentes cybersécurité cloud",
+      "description": "Réponses aux questions sur l'audit de sécurité cloud, le pentest AWS/Azure, la conformité NIS2, le RSSI externalisé et les tarifs.",
+      "url": "https://cloud-secure.fr/faq",
       mainEntity: faqs.map((f) => ({
         "@type": "Question",
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
     });
-    document.head.appendChild(script);
-    return () => { script.remove(); };
+    document.head.appendChild(faqScript);
+
+    // Breadcrumb JSON-LD
+    const breadcrumbScript = document.createElement("script");
+    breadcrumbScript.type = "application/ld+json";
+    breadcrumbScript.id = "faq-breadcrumb-jsonld";
+    breadcrumbScript.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://cloud-secure.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://cloud-secure.fr/faq" }
+      ]
+    });
+    document.head.appendChild(breadcrumbScript);
+
+    return () => {
+      faqScript.remove();
+      breadcrumbScript.remove();
+    };
   }, []);
 
   return (

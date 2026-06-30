@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
@@ -63,6 +64,125 @@ const plans = [
 ];
 
 const Tarifs = () => {
+  useEffect(() => {
+    const pricingSchema = {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Tarifs CloudSecure – Cybersécurité Cloud",
+      "description": "Nos offres de cybersécurité cloud : audit AWS/Azure, pentest cloud et RSSI externalisé pour startups et PME tech.",
+      "url": "https://cloud-secure.fr/tarifs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Service",
+            "name": "Audit Essentiel – Sécurité Cloud",
+            "description": "Premier audit de sécurité cloud pour startups et PME. Audit de configuration AWS ou Azure, revue des accès IAM, rapport détaillé avec recommandations et plan de remédiation prioritaire.",
+            "provider": {
+              "@type": "Organization",
+              "name": "CloudSecure",
+              "url": "https://cloud-secure.fr"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": "8000",
+                "priceCurrency": "EUR",
+                "description": "À partir de 8 000 € selon la taille de l'infrastructure"
+              },
+              "availability": "https://schema.org/InStock",
+              "url": "https://cloud-secure.fr/tarifs"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Service",
+            "name": "Pentest Cloud – Tests d'intrusion AWS, Azure, GCP",
+            "description": "Tests d'intrusion avancés sur votre infrastructure cloud. Simulation d'attaques réelles, exploitation active des vulnérabilités, audit d'architecture, escalade de privilèges. Rapport exécutif + technique avec vérification post-remédiation.",
+            "provider": {
+              "@type": "Organization",
+              "name": "CloudSecure",
+              "url": "https://cloud-secure.fr"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": "12000",
+                "priceCurrency": "EUR",
+                "description": "À partir de 12 000 € selon le périmètre du test"
+              },
+              "availability": "https://schema.org/InStock",
+              "url": "https://cloud-secure.fr/tarifs"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Service",
+            "name": "RSSI Externalisé – Directeur Sécurité à temps partiel",
+            "description": "Un directeur sécurité dédié à temps partiel. Définition de la stratégie sécurité, pilotage des audits et pentests, conformité NIS2/RGPD/ISO 27001, gestion des incidents, formation équipes et reporting mensuel COMEX.",
+            "provider": {
+              "@type": "Organization",
+              "name": "CloudSecure",
+              "url": "https://cloud-secure.fr"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": "3000",
+                "priceCurrency": "EUR",
+                "unitCode": "MON",
+                "description": "À partir de 3 000 €/mois selon le volume de jours"
+              },
+              "availability": "https://schema.org/InStock",
+              "url": "https://cloud-secure.fr/tarifs"
+            }
+          }
+        }
+      ]
+    };
+
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://cloud-secure.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Tarifs", "item": "https://cloud-secure.fr/tarifs" }
+      ]
+    };
+
+    const addScript = (id: string, content: object) => {
+      let el = document.getElementById(id) as HTMLScriptElement;
+      if (!el) {
+        el = document.createElement("script");
+        el.id = id;
+        el.type = "application/ld+json";
+        document.head.appendChild(el);
+      }
+      el.textContent = JSON.stringify(content);
+    };
+
+    addScript("tarifs-pricing-jsonld", pricingSchema);
+    addScript("tarifs-breadcrumb-jsonld", breadcrumbSchema);
+
+    return () => {
+      document.getElementById("tarifs-pricing-jsonld")?.remove();
+      document.getElementById("tarifs-breadcrumb-jsonld")?.remove();
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <SEOHead

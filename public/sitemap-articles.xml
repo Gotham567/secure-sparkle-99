@@ -1,8 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Articles publiés en juin 2026 (nouveaux) -->
+  <url>
+    <loc>https://cloud-secure.fr/actualites/owasp-llm-top-10-securite-ia-generative</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/cnapp-securite-cloud-native-cspm-cwpp-ciem</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/securite-api-graphql-introspection-injections</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/kubernetes-rbac-durcissement-cis-benchmark</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/securite-conteneurs-docker-trivy-falco</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/github-actions-securite-oidc-supply-chain</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/terraform-securite-iac-checkov-tfsec</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/azure-sentinel-microsoft-defender-siem-guide</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/cloud-souverain-france-secnumcloud-guide</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/securite-google-cloud-platform-guide-pme</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/securite-kubernetes-cloud-aws-azure-gcp</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/waf-cloud-aws-azure-gcp-comparatif</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/securite-api-cloud-owasp-aws-azure-gcp</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/nis2-cloud-fournisseurs-services-numeriques</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/dora-conformite-cloud-entreprises-financieres</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/budget-securite-cloud-startup-pme-tech</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/notification-incident-cloud-nis2-cnil</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/cout-cyberattaque-entreprise-2026</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/patch-management-cvss-nis2</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://cloud-secure.fr/actualites/securite-infrastructure-as-code-terraform-guide</loc>
     <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/securite-docker-conteneurs-guide</loc>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -13,8 +134,20 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://cloud-secure.fr/actualites/threat-modeling-stride-guide</loc>
+    <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://cloud-secure.fr/actualites/securite-azure-active-directory</loc>
     <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/ransomware-as-a-service-protection-2026</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -25,8 +158,20 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://cloud-secure.fr/actualites/sbom-supply-chain-securite-logicielle</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://cloud-secure.fr/actualites/pentest-cloud-aws-azure-guide</loc>
     <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://cloud-secure.fr/actualites/securite-active-directory-enterprise-guide</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

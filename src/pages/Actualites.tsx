@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -618,11 +619,31 @@ const ArticleCard = ({ article }: { article: Article }) => (
 );
 
 const Actualites = () => {
+  useEffect(() => {
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://cloud-secure.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Actualités & Ressources", "item": "https://cloud-secure.fr/actualites" }
+      ]
+    };
+    let el = document.getElementById("actualites-breadcrumb-jsonld") as HTMLScriptElement;
+    if (!el) {
+      el = document.createElement("script");
+      el.id = "actualites-breadcrumb-jsonld";
+      el.type = "application/ld+json";
+      document.head.appendChild(el);
+    }
+    el.textContent = JSON.stringify(breadcrumbSchema);
+    return () => { el?.remove(); };
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Actualités & Ressources Cybersécurité"
-        description="Guides complets, analyses et articles sur la cybersécurité cloud, les audits AWS/Azure, les tests d'intrusion et la conformité NIS2 pour les PME et startups."
+        title="Actualités & Ressources Cybersécurité Cloud"
+        description="Guides complets, analyses et articles sur la cybersécurité cloud, les audits AWS/Azure, les tests d'intrusion et la conformité NIS2 pour les PME et startups tech."
       />
       <Navbar />
       <section className="pt-32 pb-20">

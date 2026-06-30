@@ -31,13 +31,15 @@ const toISODate = (frenchDate: string): string => {
 };
 
 const BlogLayout = ({ title, description, date, readTime, category, children }: BlogLayoutProps) => {
+  const isoDate = toISODate(date);
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
         title={title}
         description={description}
         type="article"
-        articleDate={toISODate(date)}
+        articleDate={isoDate}
+        articleModified={isoDate}
         articleCategory={category}
       />
       <Navbar />
@@ -60,7 +62,7 @@ const BlogLayout = ({ title, description, date, readTime, category, children }: 
               </span>
               <span className="inline-flex items-center gap-1.5">
                 <Calendar className="h-3.5 w-3.5" aria-hidden="true" />
-                <time>{date}</time>
+                <time dateTime={isoDate}>{date}</time>
               </span>
               <span className="inline-flex items-center gap-1.5">
                 <Clock className="h-3.5 w-3.5" aria-hidden="true" />

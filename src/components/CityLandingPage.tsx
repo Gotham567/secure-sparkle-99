@@ -37,15 +37,18 @@ const CityLandingPage = ({ data }: Props) => {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: `CloudSecure ${data.city}`,
+    name: `CloudSecure – Sécurité Cloud ${data.city}`,
     description,
     url,
     telephone: "+33679323019",
     email: "contact@cloudsecure.fr",
-    areaServed: {
-      "@type": "City",
-      name: data.city,
-    },
+    image: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9788b1a0-488a-4642-9aa3-61a4f2faeedc/id-preview-57d65fc8--ac5cac8d-0c20-497c-96b5-7d97436bd2b7.lovable.app-1773502129598.png",
+    logo: "https://cloud-secure.fr/favicon.png",
+    openingHours: "Mo-Fr 09:00-18:00",
+    areaServed: [
+      { "@type": "City", name: data.city },
+      { "@type": "AdministrativeArea", name: data.region },
+    ],
     address: {
       "@type": "PostalAddress",
       addressLocality: data.city,
@@ -58,8 +61,14 @@ const CityLandingPage = ({ data }: Props) => {
       "Audit sécurité cloud",
       "Sécurité AWS",
       "Sécurité Azure",
+      "Sécurité Google Cloud",
       "DevSecOps",
       "Conformité NIS2",
+      "RSSI externalisé",
+    ],
+    sameAs: [
+      "https://www.linkedin.com/company/cloudsecure/",
+      "https://twitter.com/CloudSecureFr"
     ],
   };
 
@@ -96,10 +105,14 @@ const CityLandingPage = ({ data }: Props) => {
         <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9788b1a0-488a-4642-9aa3-61a4f2faeedc/id-preview-57d65fc8--ac5cac8d-0c20-497c-96b5-7d97436bd2b7.lovable.app-1773502129598.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={title} />
+        <meta property="og:image:type" content="image/png" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@CloudSecureFr" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9788b1a0-488a-4642-9aa3-61a4f2faeedc/id-preview-57d65fc8--ac5cac8d-0c20-497c-96b5-7d97436bd2b7.lovable.app-1773502129598.png" />
+        <meta name="twitter:image:alt" content={title} />
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
